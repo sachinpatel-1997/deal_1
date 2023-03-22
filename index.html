@@ -1,0 +1,5448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+    <style>
+* {
+				margin: 0px;
+				font-family: Helvetica, "Helvetica Neue", Roboto, Noto, Arial, sans-serif;
+			}
+			
+			#RootWrapperHomePageV1 {
+				min-height: 100vh;
+				background-color: white;
+				position: relative;
+			}
+			
+			#Header {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				gap: 30px;
+				background-color: rgb(67, 223, 154);
+				box-sizing: border-box;
+				padding: 30px 0px 0px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 1920px;
+				height: 181px;
+			}
+			
+			#TopHeader {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 95px;
+				box-sizing: border-box;
+			}
+			
+			#Frame9 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 66px;
+				box-sizing: border-box;
+			}
+			
+			#Logo {
+				width: 257px;
+				height: 61px;
+				position: relative;
+			}
+			
+			#TransparentLogoTextAndRound1 {
+				width: 258px;
+				height: 50px;
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: -0px;
+			}
+			
+			#Frame1 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 20px;
+				width: 628px;
+				box-sizing: border-box;
+			}
+			
+			#InputFieldBase {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 6px;
+				width: 195px;
+				box-sizing: border-box;
+			}
+			
+			#InputWithLabel {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 6px;
+				align-self: stretch;
+				box-sizing: border-box;
+				flex-shrink: 0;
+			}
+			
+			#Input {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				border-radius: 10px;
+				align-self: stretch;
+				background-color: white;
+				box-sizing: border-box;
+				padding: 13px 20px;
+				flex-shrink: 0;
+			}
+			
+			#Content {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				width: 131px;
+				box-sizing: border-box;
+			}
+			
+			#MapPin {
+				width: 20px;
+				height: 20px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#Icon {
+				object-fit: cover;
+				position: absolute;
+				left: 3px;
+				top: 1px;
+				right: 3px;
+				bottom: 1px;
+			}
+			
+			#Text {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+				width: 103px;
+				flex: 1;
+			}
+			
+			#ChevronDown {
+				width: 16px;
+				height: 16px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#Icon_0001 {
+				object-fit: cover;
+				position: absolute;
+				left: 4px;
+				top: 6px;
+				right: 4px;
+				bottom: 6px;
+			}
+			
+			#InputFieldBase_0001 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: 1;
+				gap: 6px;
+				width: 413px;
+				box-sizing: border-box;
+			}
+			
+			#Content_0001 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+			}
+			
+			#Content_0002 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				width: 349px;
+				box-sizing: border-box;
+			}
+			
+			#Text_0001 {
+				color: rgb(157, 157, 157);
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+				width: 351px;
+				flex: 1;
+			}
+			
+			#SearchNormal {
+				width: 16px;
+				height: 16px;
+				position: relative;
+			}
+			
+			#VuesaxLinearSearchNormal {
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Vector {
+				object-fit: cover;
+				position: absolute;
+				left: 1px;
+				top: 1px;
+				right: 3px;
+				bottom: 3px;
+			}
+			
+			#Vector_0001 {
+				object-fit: cover;
+				position: absolute;
+				left: 13px;
+				top: 12px;
+				right: 1px;
+				bottom: 1px;
+			}
+			
+			#Vector_0002 {
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				opacity: 0;
+			}
+			
+			#Frame5 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				box-sizing: border-box;
+			}
+			
+			#KiaOraAotearoa {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 24px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 32px;
+				text-align: left;
+			}
+			
+			#_22Jan2022 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: right;
+				align-self: stretch;
+				flex-shrink: 0;
+			}
+			
+			#Stripe {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+				align-self: stretch;
+				background-color: rgba(0, 0, 0, 0.05);
+				box-sizing: border-box;
+				padding: 0px 320px;
+				flex-shrink: 0;
+			}
+			
+			#Frame4 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 322px;
+				box-sizing: border-box;
+			}
+			
+			#Frame3 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 30px;
+				box-sizing: border-box;
+			}
+			
+			#ButtonBase {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 12px;
+				box-sizing: border-box;
+				padding-bottom: 16px;
+				padding-top: 16px;
+				padding-right: 28px;
+			}
+			
+			#Category {
+				width: 24px;
+				height: 24px;
+				position: relative;
+			}
+			
+			#VuesaxLinearCategory {
+				width: 24px;
+				height: 24px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Vector_0003 {
+				object-fit: cover;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 14px;
+				bottom: 14px;
+			}
+			
+			#Vector_0004 {
+				object-fit: cover;
+				position: absolute;
+				left: 14px;
+				top: 2px;
+				right: 2px;
+				bottom: 14px;
+			}
+			
+			#Vector_0005 {
+				object-fit: cover;
+				position: absolute;
+				left: 14px;
+				top: 14px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Vector_0006 {
+				object-fit: cover;
+				position: absolute;
+				left: 2px;
+				top: 14px;
+				right: 14px;
+				bottom: 2px;
+			}
+			
+			#Text_0002 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 18px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 28px;
+				text-align: left;
+			}
+			
+			#Shop {
+				width: 24px;
+				height: 24px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#Vector_0008 {
+				width: 22px;
+				height: 20px;
+				position: absolute;
+				left: 1px;
+				top: 2px;
+				right: 1px;
+				bottom: 2px;
+			}
+			
+			#Icon_0002 {
+				object-fit: cover;
+				position: absolute;
+				left: 3px;
+				top: 3px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Icon_0003 {
+				object-fit: cover;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#ButtonBase_0005 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 12px;
+				background-color: rgba(0, 0, 0, 0.05);
+				box-sizing: border-box;
+				padding: 16px 28px;
+			}
+			
+			#Vector_0009 {
+				object-fit: cover;
+				position: absolute;
+				left: 7px;
+				top: 2px;
+				right: 7px;
+				bottom: 12px;
+			}
+			
+			#Vector_0010 {
+				object-fit: cover;
+				position: absolute;
+				left: 3px;
+				top: 15px;
+				right: 3px;
+				bottom: 2px;
+			}
+			
+			#AllHotDealsAtOnePlace {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 30px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 38px;
+				text-align: left;
+				position: absolute;
+				left: 320px;
+				top: 231px;
+			}
+			
+			#CategorySlider {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				gap: 30px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 320px;
+				top: 319px;
+				width: 1280px;
+				height: 586px;
+			}
+			
+			#TopCategories {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				flex: 1;
+				gap: 10px;
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				border-radius: 10px;
+				width: 393px;
+				background-color: white;
+				box-sizing: border-box;
+				padding: 20px;
+			}
+			
+			#Frame8 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 20px;
+				width: 353px;
+				box-sizing: border-box;
+			}
+			
+			#TopCategories_0001 {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 18px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 28px;
+				text-align: left;
+				align-self: stretch;
+				flex-shrink: 0;
+			}
+			
+			#Frame7 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 15px;
+				align-self: stretch;
+				box-sizing: border-box;
+				flex-shrink: 0;
+			}
+			
+			#_1 {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 15px;
+				align-self: stretch;
+				box-sizing: border-box;
+				flex-shrink: 0;
+			}
+			
+			#Frame6 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				gap: 20px;
+				align-self: stretch;
+				box-sizing: border-box;
+				flex-shrink: 0;
+			}
+			
+			#Button {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				flex: none;
+				border-radius: 10px;
+				box-sizing: border-box;
+			}
+			
+			#ButtonBase_0006 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border: solid 1px rgb(67, 223, 154);
+				border-radius: 10px;
+				background-color: rgb(67, 223, 154);
+				box-sizing: border-box;
+				padding: 8px;
+			}
+			
+			#Vector_0012 {
+				width: 17px;
+				height: 17px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Travel {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+				width: 253px;
+				flex: 1;
+			}
+			
+			#Icon_0005 {
+				object-fit: cover;
+				position: absolute;
+				left: 9px;
+				top: 6px;
+				right: 9px;
+				bottom: 6px;
+			}
+			
+			#Divider {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: flex-start;
+				flex: none;
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				box-sizing: border-box;
+			}
+			
+			#Vector_0013 {
+				width: 18px;
+				height: 15px;
+				position: absolute;
+				left: 1px;
+				top: 2px;
+				right: 1px;
+				bottom: 2px;
+			}
+			
+			#SportsFitness {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+				width: 255px;
+				flex: 1;
+			}
+			
+			#Vector_0017 {
+				width: 15px;
+				height: 17px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Vector_0018 {
+				width: 17px;
+				height: 13px;
+				position: absolute;
+				left: 2px;
+				top: 3px;
+				right: 2px;
+				bottom: 3px;
+			}
+			
+			#ViewAllCategories {
+				color: rgb(67, 223, 154);
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: center;
+				align-self: stretch;
+				flex-shrink: 0;
+			}
+			
+			#Slider {
+				width: 857px;
+				height: 586px;
+				position: relative;
+			}
+			
+			#Rectangle2 {
+				width: 857px;
+				height: 586px;
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Rectangle3 {
+				width: 857px;
+				height: 586px;
+				background: linear-gradient(-180deg, rgba(0, 0, 0, 0.18), rgba(255, 255, 255, 0));
+				border-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#OnlyLegitSaleNothingElse {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 36px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 44px;
+				text-align: left;
+				position: absolute;
+				left: 50px;
+				top: 50px;
+			}
+			
+			#ButtonBase_0013 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				border-radius: 10px;
+				background-color: rgb(67, 223, 154);
+				box-sizing: border-box;
+				padding: 10px 18px;
+				position: absolute;
+				left: 50px;
+				top: 163px;
+				width: 117px;
+				height: 44px;
+			}
+			
+			#Text_0008 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+			}
+			
+			#ButtonBase_0014 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				background-color: rgba(0, 0, 0, 0.5);
+				box-sizing: border-box;
+				padding: 12px;
+				position: absolute;
+				left: 0px;
+				top: 271px;
+				width: 44px;
+				height: 44px;
+			}
+			
+			#Icon_0012 {
+				object-fit: cover;
+				position: absolute;
+				left: 8px;
+				top: 5px;
+				right: 8px;
+				bottom: 5px;
+			}
+			
+			#ButtonBase_0015 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				background-color: rgba(0, 0, 0, 0.5);
+				box-sizing: border-box;
+				padding: 12px;
+				position: absolute;
+				left: 813px;
+				top: 271px;
+				width: 44px;
+				height: 44px;
+			}
+			
+			#Group1 {
+				width: 857px;
+				height: 70px;
+				position: absolute;
+				left: 0px;
+				top: 516px;
+			}
+			
+			#Rectangle3_0001 {
+				width: 857px;
+				height: 70px;
+				background-color: rgba(0, 0, 0, 0.25);
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#_30DiscountOnHelloFreah {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 20px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 30px;
+				text-align: left;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+			}
+			
+			#Stripe_0001 {
+				width: 1280px;
+				height: 64px;
+				position: absolute;
+				left: 320px;
+				top: 935px;
+			}
+			
+			#Rectangle4 {
+				width: 1280px;
+				height: 64px;
+				background-color: white;
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				border-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#WhenYouBuyThroughLinksOnDealbuddyWeMayEarnACommissionLearnMore {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+				position: absolute;
+				left: 315px;
+				top: 20px;
+			}
+			
+			#Deals {
+				width: 630px;
+				height: 200px;
+				position: absolute;
+				left: 320px;
+				top: 1029px;
+			}
+			
+			#Rectangle2_0001 {
+				width: 630px;
+				height: 200px;
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Rectangle3_0002 {
+				width: 630px;
+				height: 200px;
+				background-color: rgba(0, 0, 0, 0.5);
+				border-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Sale {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 36px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 44px;
+				text-align: left;
+				position: absolute;
+				left: 276px;
+				top: 50px;
+			}
+			
+			#ShopTodaySTrendingSaleAndSaveBig {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: center;
+				width: 214px;
+				position: absolute;
+				left: 208px;
+				top: 100px;
+			}
+			
+			#Coupons {
+				width: 630px;
+				height: 200px;
+				position: absolute;
+				left: 970px;
+				top: 1029px;
+			}
+			
+			#Coupons_0001 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 36px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 44px;
+				text-align: left;
+				position: absolute;
+				left: 236px;
+				top: 50px;
+			}
+			
+			#UseThisCouponsToSaveAtCheckoutOnlineOrInStore {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: center;
+				width: 234px;
+				position: absolute;
+				left: 198px;
+				top: 100px;
+			}
+			
+			#PopularDealsCoupons {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 100px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 320px;
+				top: 1607px;
+				width: 1280px;
+				height: 1722px;
+			}
+			
+			#PopularDeals {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 30px;
+				box-sizing: border-box;
+			}
+			
+			#Title {
+				width: 1280px;
+				height: 38px;
+				position: relative;
+			}
+			
+			#PopularSale {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 30px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 38px;
+				text-align: left;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Button_0007 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 1174px;
+				top: 1px;
+				width: 106px;
+				height: 36px;
+			}
+			
+			#ButtonBase_0016 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border-radius: 5px;
+				width: 106px;
+				background-color: rgb(67, 223, 154);
+				box-sizing: border-box;
+				padding: 8px 14px;
+			}
+			
+			#Text_0009 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+			}
+			
+			#Frame19 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 20px;
+				box-sizing: border-box;
+			}
+			
+			#Frame17 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				flex: none;
+				gap: 20px;
+				box-sizing: border-box;
+			}
+			
+			#Deal {
+				width: 305px;
+				height: 479px;
+				position: relative;
+			}
+			
+			#Rectangle5 {
+				background-color: white;
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				border-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Group2 {
+				width: 305px;
+				height: 200px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Rectangle6 {
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Group6 {
+				width: 305px;
+				height: 38px;
+				position: absolute;
+				left: 0px;
+				top: 162px;
+			}
+			
+			#Rectangle7 {
+				background-color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Frame11 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-end;
+				gap: 20px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 97px;
+				top: 10px;
+				right: 96px;
+				bottom: 10px;
+			}
+			
+			#Frame9_0001 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 8px;
+				box-sizing: border-box;
+			}
+			
+			#Icon_0014 {
+				object-fit: cover;
+				position: absolute;
+				left: 1px;
+				top: 3px;
+				right: 1px;
+				bottom: 3px;
+			}
+			
+			#_500 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 12px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 18px;
+				text-align: left;
+			}
+			
+			#Group {
+				width: 10px;
+				height: 13px;
+				position: absolute;
+				left: 3px;
+				top: 1px;
+			}
+			
+			#Vector_0019 {
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: 5px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Vector_0020 {
+				object-fit: cover;
+				position: absolute;
+				left: 8px;
+				top: 4px;
+				right: 0px;
+				bottom: 8px;
+			}
+			
+			#Vector_0021 {
+				object-fit: cover;
+				position: absolute;
+				left: 6px;
+				top: 3px;
+				right: 2px;
+				bottom: 8px;
+			}
+			
+			#Vector_0022 {
+				object-fit: cover;
+				position: absolute;
+				left: 4px;
+				top: 3px;
+				right: 4px;
+				bottom: 8px;
+			}
+			
+			#Vector_0023 {
+				object-fit: cover;
+				position: absolute;
+				left: 2px;
+				top: 0px;
+				right: 6px;
+				bottom: 5px;
+			}
+			
+			#Button_0008 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				right: 179px;
+				bottom: 144px;
+			}
+			
+			#ButtonBase_0017 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border-radius: 5px;
+				background-color: rgba(0, 0, 0, 0.75);
+				box-sizing: border-box;
+				padding: 8px 14px;
+			}
+			
+			#Button_0009 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 249px;
+				top: 20px;
+				right: 20px;
+				bottom: 144px;
+			}
+			
+			#ButtonBase_0018 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border-radius: 5px;
+				background-color: rgba(0, 0, 0, 0.75);
+				box-sizing: border-box;
+				padding: 8px;
+			}
+			
+			#Heart {
+				width: 20px;
+				height: 20px;
+				position: relative;
+			}
+			
+			#VuesaxLinearHeart {
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Vector_0024 {
+				object-fit: cover;
+				position: absolute;
+				left: 2px;
+				top: 3px;
+				right: 2px;
+				bottom: 3px;
+			}
+			
+			#Frame16 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: center;
+				gap: 15px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 20px;
+				top: 220px;
+				right: 20px;
+				bottom: 20px;
+			}
+			
+			#Frame14 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 15px;
+				box-sizing: border-box;
+			}
+			
+			#Frame12 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 10px;
+				box-sizing: border-box;
+			}
+			
+			#SaleInStoreOnline {
+				color: rgba(0, 0, 0, 0.5);
+				text-overflow: ellipsis;
+				font-size: 12px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 18px;
+				text-align: left;
+				width: 267px;
+			}
+			
+			#Flat10OffOnDoubleCheeseMargherita {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 18px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 28px;
+				text-align: left;
+				width: 265px;
+			}
+			
+			#Frame6_0007 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: none;
+				gap: 10px;
+				width: 265px;
+				box-sizing: border-box;
+			}
+			
+			#Vector_0026 {
+				width: 18px;
+				height: 17px;
+				position: absolute;
+				left: 1px;
+				top: 2px;
+				right: 1px;
+				bottom: 2px;
+			}
+			
+			#NwStore {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				width: 237px;
+				flex: 1;
+			}
+			
+			#Icon_0016 {
+				object-fit: cover;
+				position: absolute;
+				left: 3px;
+				top: 2px;
+				right: 3px;
+				bottom: 2px;
+			}
+			
+			#Button_0010 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				flex: none;
+				border-radius: 5px;
+				width: 265px;
+				box-sizing: border-box;
+			}
+			
+			#ButtonBase_0019 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border-radius: 5px;
+				width: 265px;
+				background-color: rgb(67, 223, 154);
+				box-sizing: border-box;
+				padding: 10px 16px;
+			}
+			
+			#MultipleLocation_0001 {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				width: 235px;
+				flex: 1;
+			}
+			
+			#Button_0017 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				right: 179px;
+				bottom: 144px;
+			}
+			
+			#Button_0018 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
+			
+			#Coupon {
+				width: 630px;
+				height: 244px;
+				position: relative;
+			}
+			
+			#Frame27 {
+				width: 630px;
+				height: 244px;
+				background-color: rgba(67, 223, 154, 0.05);
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				border-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Rectangle6_0008 {
+				object-fit: cover;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				right: 420px;
+				bottom: 124px;
+			}
+			
+			#Group6_0008 {
+				width: 190px;
+				height: 38px;
+				position: absolute;
+				left: 20px;
+				top: 82px;
+			}
+			
+			#Rectangle7_0008 {
+				background-color: rgba(0, 0, 0, 0.5);
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Frame11_0008 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-end;
+				gap: 20px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 39px;
+				top: 10px;
+				right: 39px;
+				bottom: 10px;
+			}
+			
+			#Button_0037 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				left: calc((calc((50% + 64px)) - 32px));
+				top: 20px;
+				bottom: 188px;
+				width: 63px;
+			}
+			
+			#Text_0027 {
+				color: white;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: right;
+			}
+			
+			#Frame12_0008 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 20px;
+				top: 140px;
+				width: 390px;
+				height: 84px;
+			}
+			
+			#CouponInStoreOnline {
+				color: rgba(0, 0, 0, 0.5);
+				text-overflow: ellipsis;
+				font-size: 12px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 18px;
+				text-align: left;
+				align-self: stretch;
+				flex-shrink: 0;
+			}
+			
+			#Button_0038 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 301px;
+				top: 20px;
+				right: 293px;
+				bottom: 188px;
+			}
+			
+			#Frame24 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				gap: 10px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				background-color: rgb(227, 250, 237);
+				box-sizing: border-box;
+				padding: 20px;
+				position: absolute;
+				left: 430px;
+				top: 0px;
+				width: 200px;
+				height: 244px;
+			}
+			
+			#Frame23 {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 18px;
+				box-sizing: border-box;
+			}
+			
+			#Frame22 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 84px;
+				box-sizing: border-box;
+			}
+			
+			#Frame13_0008 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: none;
+				gap: 10px;
+				width: 160px;
+				box-sizing: border-box;
+			}
+			
+			#Frame6_0015 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				gap: 10px;
+				align-self: stretch;
+				box-sizing: border-box;
+				flex-shrink: 0;
+			}
+			
+			#NwStore_0008 {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				width: 132px;
+				flex: 1;
+			}
+			
+			#ExpireIn42Days_0008 {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+			}
+			
+			#Button_0039 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				flex: none;
+				border-radius: 5px;
+				width: 160px;
+				box-sizing: border-box;
+			}
+			
+			#ButtonBase_0044 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border-radius: 5px;
+				width: 160px;
+				background-color: rgb(67, 223, 154);
+				box-sizing: border-box;
+				padding: 10px 16px;
+			}
+			
+			#Ellipse1 {
+				width: 22px;
+				height: 22px;
+				background-color: white;
+				border-radius: 22px / 22px;
+				position: absolute;
+				left: 419px;
+				top: -11px;
+			}
+			
+			#Ellipse2 {
+				width: 22px;
+				height: 22px;
+				background-color: white;
+				border-radius: 22px / 22px;
+				position: absolute;
+				left: 419px;
+				top: 255px;
+			}
+			
+			#SponsorPost {
+				width: 1920px;
+				height: 529px;
+				position: absolute;
+				left: 0px;
+				top: 3439px;
+			}
+			
+			#Rectangle7_0012 {
+				width: 1920px;
+				height: 529px;
+				background-color: rgba(67, 223, 154, 0.05);
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#Sponsor {
+				width: 305px;
+				height: 261px;
+				position: absolute;
+				left: 320px;
+				top: 168px;
+			}
+			
+			#Group3 {
+				width: 303px;
+				height: 147px;
+				position: absolute;
+				left: 1px;
+				top: 1px;
+			}
+			
+			#Rectangle9 {
+				background-color: rgba(0, 0, 0, 0.05);
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				opacity: 0.3;
+			}
+			
+			#Image1 {
+				object-fit: cover;
+				position: absolute;
+				left: 109px;
+				top: 30px;
+				right: 107px;
+				bottom: 30px;
+			}
+			
+			#Frame32 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 9px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 20px;
+				top: 168px;
+				right: 20px;
+				bottom: 20px;
+			}
+			
+			#Sponsor_0001 {
+				width: 305px;
+				height: 261px;
+				position: absolute;
+				left: 645px;
+				top: 168px;
+			}
+			
+			#Sponsor_0002 {
+				width: 305px;
+				height: 261px;
+				position: absolute;
+				left: 970px;
+				top: 168px;
+			}
+			
+			#Sponsor_0003 {
+				width: 305px;
+				height: 261px;
+				position: absolute;
+				left: 1295px;
+				top: 168px;
+			}
+			
+			#SponsorAds {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 30px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 38px;
+				text-align: left;
+				position: absolute;
+				left: 320px;
+				top: 100px;
+			}
+			
+			#Button_0049 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				box-sizing: border-box;
+				position: absolute;
+				left: 1630px;
+				top: 281px;
+				width: 36px;
+				height: 36px;
+			}
+			
+			#ButtonBase_0054 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border-radius: 5px;
+				width: 36px;
+				background-color: rgba(67, 223, 154, 0.15);
+				box-sizing: border-box;
+				padding: 8px;
+			}
+			
+			#Button_0050 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				box-sizing: border-box;
+				position: absolute;
+				left: 290px;
+				top: 317px;
+				transform: rotate(-180deg);
+				transform-origin: top left;
+				width: 36px;
+				height: 36px;
+			}
+			
+			#Stores {
+				width: 1280px;
+				height: 502px;
+				position: absolute;
+				left: 320px;
+				top: 4068px;
+			}
+			
+			#Frame36 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 20px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 0px;
+				top: 68px;
+				width: 1280px;
+				height: 434px;
+			}
+			
+			#Store {
+				width: 305px;
+				height: 207px;
+				position: relative;
+			}
+			
+			#UnsplashE8Ufcyxz514 {
+				object-fit: cover;
+				position: absolute;
+				left: 1px;
+				top: 1px;
+				right: 1px;
+				bottom: 108px;
+			}
+			
+			#Frame33 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 20px;
+				top: 49px;
+				width: 265px;
+				height: 138px;
+			}
+			
+			#Image1_0004 {
+				width: 100px;
+				height: 100px;
+				object-fit: cover;
+			}
+			
+			#SixSessionsOfLaser_0005 {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 18px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 28px;
+				text-align: left;
+				width: 267px;
+			}
+			
+			#NewsLatter {
+				width: 1280px;
+				height: 178px;
+				position: absolute;
+				left: 320px;
+				top: 4670px;
+			}
+			
+			#Rectangle10 {
+				width: 1280px;
+				height: 178px;
+				background-color: rgb(227, 250, 237);
+				border-radius: 10px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			#JoinTheSaleWagonAndStartSaving {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 30px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 38px;
+				text-align: left;
+				position: absolute;
+				left: 50px;
+				top: 50px;
+			}
+			
+			#Group4 {
+				width: 572px;
+				height: 76px;
+				position: absolute;
+				left: 658px;
+				top: 52px;
+			}
+			
+			#InputFieldBase_0002 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 6px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 572px;
+				height: 76px;
+			}
+			
+			#Input_0002 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				box-shadow: 0px 1px 2px  rgba(16, 24, 40, 0.05);
+				border: solid 1px rgba(254, 244, 0, 0.15);
+				border-radius: 8px;
+				align-self: stretch;
+				background-color: white;
+				box-sizing: border-box;
+				padding: 13px 20px;
+				flex-shrink: 0;
+			}
+			
+			#Content_0003 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: 8px;
+				width: 508px;
+				box-sizing: border-box;
+			}
+			
+			#Text_0036 {
+				color: rgb(168, 168, 168);
+				text-overflow: ellipsis;
+				font-size: 16px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 24px;
+				text-align: left;
+				width: 480px;
+				flex: 1;
+			}
+			
+			#HelpCircle_0001 {
+				overflow: hidden;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Icon_0053 {
+				object-fit: cover;
+				position: absolute;
+				left: 1px;
+				top: 1px;
+				right: 1px;
+				bottom: 1px;
+			}
+			
+			#Button_0052 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				border-radius: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 459px;
+				top: 33px;
+				width: 106px;
+				height: 36px;
+			}
+			
+			#Blogs {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 30px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 320px;
+				top: 4948px;
+				width: 1280px;
+				height: 494px;
+			}
+			
+			#Blogs_0001 {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 30px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 38px;
+				text-align: left;
+			}
+			
+			#Blog {
+				width: 305px;
+				height: 426px;
+				position: relative;
+			}
+			
+			#UnsplashYhSwy6Uqvk {
+				object-fit: cover;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 226px;
+			}
+			
+			#SaleInStoreOnlinesaleInStoreOnlinesaleInStoreOnline {
+				color: rgba(0, 0, 0, 0.5);
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				width: 265px;
+			}
+			
+			#Footer {
+				width: 1920px;
+				height: 485px;
+				position: absolute;
+				left: 0px;
+				top: 5542px;
+			}
+			
+			#Rectangle7_0013 {
+				background-color: rgba(67, 223, 154, 0.05);
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#_1_0001 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 15px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 755px;
+				top: 50px;
+				right: 903px;
+				bottom: 203px;
+			}
+			
+			#QuickLinks {
+				color: rgb(15, 15, 15);
+				text-overflow: ellipsis;
+				font-size: 18px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 28px;
+				text-align: left;
+				align-self: stretch;
+				flex-shrink: 0;
+			}
+			
+			#Icon_0054 {
+				object-fit: cover;
+				position: absolute;
+				left: 6px;
+				top: 4px;
+				right: 6px;
+				bottom: 4px;
+			}
+			
+			#Divider_0007 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: flex-start;
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				align-self: stretch;
+				box-sizing: border-box;
+				flex-shrink: 0;
+			}
+			
+			#_5_0001 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 15px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 1079px;
+				top: 50px;
+				right: 579px;
+				bottom: 203px;
+			}
+			
+			#_4_0001 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 20px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 320px;
+				top: 50px;
+				right: 1187px;
+				bottom: 239px;
+			}
+			
+			#DealbuddyAimsToHelpCustomersDiscoverNewExperiencesAndProductsAtTheLowestPossiblePricesAndLocalBusinessesThriveEveryDayLetSFindYourPerfectDeal {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				width: 413px;
+			}
+			
+			#Divider_0015 {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				align-items: flex-start;
+				border: solid 1px rgba(0, 0, 0, 0.15);
+				box-sizing: border-box;
+				position: absolute;
+				left: 0px;
+				top: 332px;
+				right: 0px;
+				bottom: 152px;
+			}
+			
+			#DealbuddyIsARegisteredTrademarkOfDealBuddyLimitedThirdPartyTrademarksAreThePropertyOfTheirRespectiveThirdPartyOwnersPresenceOfAThirdPartyTrademarkDoesNotMeanThatDealbuddyHasAnyRelationshipWithThatThirdPartyOrThatTheThirdPartyEndorsesDealbuddyOrItsServices {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				position: absolute;
+				left: 320px;
+				top: 363px;
+				right: 320px;
+				bottom: 82px;
+			}
+			
+			#Group8 {
+				width: 1280px;
+				height: 32px;
+				position: absolute;
+				left: 320px;
+				top: 423px;
+			}
+			
+			#_2022DealBuddyLimitedAllRightsReserved {
+				color: rgba(0, 0, 0, 0.5);
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				position: absolute;
+				left: 0px;
+				top: 6px;
+				right: 975px;
+				bottom: 6px;
+			}
+			
+			#TermsConditionsPrivacyPolicy {
+				color: black;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-family: Lexend, sans-serif;
+				font-weight: initial;
+				line-height: 20px;
+				text-align: left;
+				position: absolute;
+				left: 898px;
+				top: 6px;
+				right: 134px;
+				bottom: 6px;
+			}
+			
+			#Frame38_0002 {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: center;
+				gap: 20px;
+				box-sizing: border-box;
+				position: absolute;
+				left: 1196px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			
+			#Facebook {
+				width: 32px;
+				height: 32px;
+				position: relative;
+			}
+			
+			#Bg {
+				background: linear-gradient(-180deg, rgb(24, 172, 254), rgb(1, 99, 224));
+				border-radius: 28px / 28px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#F {
+				width: 12px;
+				height: 22px;
+				position: absolute;
+				left: 10px;
+				top: 8px;
+				right: 10px;
+				bottom: 2px;
+			}
+			
+			#Bg_0001 {
+				background: radial-gradient(rgb(177, 53, 137), rgb(198, 47, 148), rgb(138, 58, 200));
+				border-radius: 6px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Bg_0002 {
+				background: radial-gradient(rgb(224, 232, 183), rgb(251, 138, 46), rgb(226, 66, 92), rgba(226, 66, 92, 0));
+				border-radius: 6px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Bg_0003 {
+				background: radial-gradient(rgb(64, 106, 220), rgb(106, 69, 190), rgba(106, 69, 190, 0));
+				border-radius: 6px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				right: 2px;
+				bottom: 2px;
+			}
+			
+			#Instagram_0001 {
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				left: 6px;
+				top: 6px;
+				right: 6px;
+				bottom: 6px;
+			}
+			
+			#Image2 {
+				object-fit: cover;
+				position: absolute;
+				left: 1489px;
+				top: 50px;
+				right: 320px;
+				bottom: 324px;
+			}
+			
+			#NewsLatter_0001 {
+				width: 1280px;
+				height: 178px;
+				position: absolute;
+				left: 320px;
+				top: 1329px;
+			}
+    </style>
+  </head>
+  <body>
+<div id="RootWrapperHomePageV1">
+			<div id="Header">
+				<div id="TopHeader">
+					<div id="Frame9">
+						<div id="Logo">
+							<img src="grida://assets-reservation/images/I4628:51867;4628:51801;4642:54678"
+			alt="image of TransparentLogoTextAndRound1"
+			id="TransparentLogoTextAndRound1">
+								
+							</img>
+						</div>
+						<div id="Frame1">
+							<div id="InputFieldBase">
+								<div id="InputWithLabel">
+									<div id="Input">
+										<div id="Content">
+											<div id="MapPin">
+												<img src="grida://assets-reservation/images/I4628:51867;4628:51803;1088:11;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+													
+												</img>
+											</div>
+											<span id="Text">
+												Hamilton
+											</span>
+										</div>
+										<div id="ChevronDown">
+											<img src="grida://assets-reservation/images/I4628:51867;4628:51803;1088:280;1027:6770"
+			alt="image of Icon"
+			id="Icon_0001">
+												
+											</img>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="InputFieldBase_0001">
+								<div id="InputWithLabel">
+									<div id="Input">
+										<div id="Content_0001">
+											<div id="Content_0002">
+												<span id="Text_0001">
+													Find Your Perfect Sale
+												</span>
+											</div>
+										</div>
+										<div id="SearchNormal">
+											<div id="VuesaxLinearSearchNormal">
+												<div id="VuesaxLinearSearchNormal">
+													<img src="grida://assets-reservation/images/I4628:51867;4628:51804;1088:280;4367:55135"
+			alt="image of Vector"
+			id="Vector">
+														
+													</img>
+													<img src="grida://assets-reservation/images/I4628:51867;4628:51804;1088:280;4367:55136"
+			alt="image of Vector"
+			id="Vector_0001">
+														
+													</img>
+													<img src="grida://assets-reservation/images/I4628:51867;4628:51804;1088:280;4367:55137"
+			alt="image of Vector"
+			id="Vector_0002">
+														
+													</img>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="Frame5">
+						<span id="KiaOraAotearoa">
+							Kia Ora, Aotearoa!
+						</span>
+						<span id="_22Jan2022">
+							22 Jan, 2022
+						</span>
+					</div>
+				</div>
+				<div id="Stripe">
+					<div id="Frame4">
+						<div id="Frame3">
+							<div id="ButtonBase">
+								<div id="Category">
+									<div id="VuesaxLinearCategory">
+										<div id="VuesaxLinearCategory">
+											<img src="grida://assets-reservation/images/I4628:51867;4628:51811;1292:158627;4367:55151"
+			alt="image of Vector"
+			id="Vector_0003">
+												
+											</img>
+											<img src="grida://assets-reservation/images/I4628:51867;4628:51811;1292:158627;4367:55152"
+			alt="image of Vector"
+			id="Vector_0004">
+												
+											</img>
+											<img src="grida://assets-reservation/images/I4628:51867;4628:51811;1292:158627;4367:55153"
+			alt="image of Vector"
+			id="Vector_0005">
+												
+											</img>
+											<img src="grida://assets-reservation/images/I4628:51867;4628:51811;1292:158627;4367:55154"
+			alt="image of Vector"
+			id="Vector_0006">
+												
+											</img>
+											<img src="grida://assets-reservation/images/I4628:51867;4628:51811;1292:158627;4367:55155"
+			alt="image of Vector"
+			id="Vector_0002">
+												
+											</img>
+										</div>
+									</div>
+								</div>
+								<span id="Text_0002">
+									Categories
+								</span>
+							</div>
+							<div id="ButtonBase">
+								<div id="Shop">
+									<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0008">
+										<path fill="white" d="M21 0L1 0C0.734784 4.44089e-16 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 2.22045e-16 0.734784 0 1L0 5C0.00173951 5.61894 0.194878 6.2222 0.552938 6.72707C0.910998 7.23193 1.41645 7.61369 2 7.82L2 19C2 19.2652 2.10536 19.5196 2.29289 19.7071C2.48043 19.8946 2.73478 20 3 20L19 20C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19L20 7.82C20.5835 7.61369 21.089 7.23193 21.4471 6.72707C21.8051 6.2222 21.9983 5.61894 22 5L22 1C22 0.734784 21.8946 0.48043 21.7071 0.292893C21.5196 0.105357 21.2652 6.66134e-16 21 0L21 0ZM14 2L16 2L16 5C16 5.26522 15.8946 5.51957 15.7071 5.70711C15.5196 5.89464 15.2652 6 15 6C14.7348 6 14.4804 5.89464 14.2929 5.70711C14.1054 5.51957 14 5.26522 14 5L14 2ZM10 2L12 2L12 5C12 5.26522 11.8946 5.51957 11.7071 5.70711C11.5196 5.89464 11.2652 6 11 6C10.7348 6 10.4804 5.89464 10.2929 5.70711C10.1054 5.51957 10 5.26522 10 5L10 2ZM6 2L8 2L8 5C8 5.26522 7.89464 5.51957 7.70711 5.70711C7.51957 5.89464 7.26522 6 7 6C6.73478 6 6.48043 5.89464 6.29289 5.70711C6.10536 5.51957 6 5.26522 6 5L6 2ZM3 6C2.73478 6 2.48043 5.89464 2.29289 5.70711C2.10536 5.51957 2 5.26522 2 5L2 2L4 2L4 5C4 5.26522 3.89464 5.51957 3.70711 5.70711C3.51957 5.89464 3.26522 6 3 6ZM13 18L9 18L9 14C9 13.4696 9.21071 12.9609 9.58579 12.5858C9.96086 12.2107 10.4696 12 11 12C11.5304 12 12.0391 12.2107 12.4142 12.5858C12.7893 12.9609 13 13.4696 13 14L13 18ZM18 18L15 18L15 14C15 12.9391 14.5786 11.9217 13.8284 11.1716C13.0783 10.4214 12.0609 10 11 10C9.93913 10 8.92172 10.4214 8.17157 11.1716C7.42143 11.9217 7 12.9391 7 14L7 18L4 18L4 7.82C4.36757 7.68356 4.70664 7.48012 5 7.22C5.55002 7.71196 6.26207 7.98393 7 7.98393C7.73793 7.98393 8.44998 7.71196 9 7.22C9.55002 7.71196 10.2621 7.98393 11 7.98393C11.7379 7.98393 12.45 7.71196 13 7.22C13.55 7.71196 14.2621 7.98393 15 7.98393C15.7379 7.98393 16.45 7.71196 17 7.22C17.2934 7.48012 17.6324 7.68356 18 7.82L18 18ZM20 5C20 5.26522 19.8946 5.51957 19.7071 5.70711C19.5196 5.89464 19.2652 6 19 6C18.7348 6 18.4804 5.89464 18.2929 5.70711C18.1054 5.51957 18 5.26522 18 5L18 2L20 2L20 5Z">
+											
+										</path>
+									</svg>
+								</div>
+								<span id="Text_0002">
+									Stores
+								</span>
+							</div>
+							<div id="ButtonBase">
+								<div id="Shop">
+									<img src="grida://assets-reservation/images/I4628:51867;4628:51813;1292:158627;1037:34056"
+			alt="image of Icon"
+			id="Icon_0002">
+										
+									</img>
+								</div>
+								<span id="Text_0002">
+									Sale
+								</span>
+							</div>
+							<div id="ButtonBase">
+								<div id="Shop">
+									<img src="grida://assets-reservation/images/I4628:51867;4780:54079;1292:158627;1037:34252"
+			alt="image of Icon"
+			id="Icon_0003">
+										
+									</img>
+								</div>
+								<span id="Text_0002">
+									Coupons
+								</span>
+							</div>
+							<div id="ButtonBase">
+								<div id="Shop">
+									<img src="grida://assets-reservation/images/I4628:51867;4984:59289;1292:158627;1037:34260"
+			alt="image of Icon"
+			id="Icon_0003">
+										
+									</img>
+								</div>
+								<span id="Text_0002">
+									FAQ
+								</span>
+							</div>
+						</div>
+						<div id="ButtonBase_0005">
+							<div id="Category">
+								<div id="VuesaxLinearCategory">
+									<div id="VuesaxLinearCategory">
+										<img src="grida://assets-reservation/images/I4628:51867;4628:51814;1292:158627;4367:55121"
+			alt="image of Vector"
+			id="Vector_0009">
+											
+										</img>
+										<img src="grida://assets-reservation/images/I4628:51867;4628:51814;1292:158627;4367:55122"
+			alt="image of Vector"
+			id="Vector_0010">
+											
+										</img>
+										<img src="grida://assets-reservation/images/I4628:51867;4628:51814;1292:158627;4367:55123"
+			alt="image of Vector"
+			id="Vector_0002">
+											
+										</img>
+									</div>
+								</div>
+							</div>
+							<span id="Text_0002">
+								Vendor Login
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span id="AllHotDealsAtOnePlace">
+				All hot deals at one place
+			</span>
+			<div id="CategorySlider">
+				<div id="TopCategories">
+					<div id="Frame8">
+						<span id="TopCategories_0001">
+							Top Categories
+						</span>
+						<div id="Frame7">
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0012">
+													<path fill="white" d="M16.6673 2.57019C16.668 2.06204 16.5179 1.56512 16.2359 1.14238C15.9539 0.719649 15.5528 0.390129 15.0834 0.195574C14.6139 0.00101902 14.0973 -0.0498153 13.599 0.049512C13.1006 0.148839 12.643 0.393858 12.284 0.753524L9.94233 3.09519L4.53399 1.29519C4.39 1.24993 4.23642 1.24463 4.08965 1.27986C3.94288 1.31508 3.80843 1.38951 3.70066 1.49519L1.71733 3.46186C1.62335 3.55692 1.55362 3.6732 1.51403 3.80087C1.47444 3.92855 1.46614 4.06388 1.48983 4.19543C1.51353 4.32699 1.56853 4.45091 1.65018 4.55675C1.73184 4.66258 1.83775 4.74722 1.95899 4.80352L6.27566 6.76186L4.10899 8.92852L2.68399 8.21186C2.53014 8.12859 2.35398 8.09585 2.18048 8.11829C2.00698 8.14072 1.84494 8.21719 1.71733 8.33686L0.242327 9.84519C0.0871181 10.0013 0 10.2125 0 10.4327C0 10.6528 0.0871181 10.8641 0.242327 11.0202L5.65066 16.4285C5.80679 16.5837 6.018 16.6709 6.23816 16.6709C6.45831 16.6709 6.66952 16.5837 6.82566 16.4285L8.33399 14.9535C8.45906 14.8297 8.54174 14.6696 8.57018 14.4959C8.59863 14.3223 8.57137 14.1441 8.49233 13.9869L7.77566 12.5619L9.94233 10.3952L11.9007 14.7119C11.957 14.8331 12.0416 14.939 12.1474 15.0207C12.2533 15.1023 12.3772 15.1573 12.5087 15.181C12.6403 15.2047 12.7756 15.1964 12.9033 15.1568C13.031 15.1172 13.1473 15.0475 13.2423 14.9535L15.209 12.9869C15.3147 12.8791 15.3891 12.7446 15.4243 12.5979C15.4595 12.4511 15.4542 12.2975 15.409 12.1535L13.609 6.74519L15.9173 4.38686C16.1567 4.149 16.3463 3.86585 16.475 3.55395C16.6038 3.24205 16.6692 2.90762 16.6673 2.57019L16.6673 2.57019ZM14.734 3.21186L12.034 5.91186C11.9283 6.01963 11.8539 6.15407 11.8187 6.30084C11.7834 6.44762 11.7887 6.6012 11.834 6.74519L13.634 12.1452L12.884 12.8952L10.9257 8.58686C10.8701 8.4645 10.7857 8.35739 10.6798 8.27468C10.5739 8.19197 10.4495 8.13611 10.3173 8.11186C10.184 8.08753 10.0468 8.09607 9.91761 8.13673C9.78838 8.17738 9.671 8.24894 9.57566 8.34519L6.14233 11.8119C6.01906 11.935 5.9375 12.0937 5.9091 12.2656C5.8807 12.4375 5.90689 12.6139 5.98399 12.7702L6.66733 14.1702L6.20066 14.6369L2.00899 10.4369L2.50066 10.0035L3.92566 10.7202C4.0819 10.7973 4.25838 10.8235 4.43028 10.7951C4.60218 10.7667 4.76086 10.6851 4.88399 10.5619L8.33399 7.09519C8.42974 7.00019 8.501 6.88336 8.54165 6.75474C8.5823 6.62612 8.59111 6.48956 8.56734 6.35679C8.54358 6.22401 8.48793 6.09899 8.40519 5.99246C8.32245 5.88593 8.21509 5.80108 8.09233 5.74519L3.75066 3.78686L4.50066 3.03686L9.90066 4.83686C10.0447 4.88211 10.1982 4.88741 10.345 4.85219C10.4918 4.81696 10.6262 4.74254 10.734 4.63686L13.434 1.93686C13.517 1.85194 13.6162 1.78447 13.7257 1.73841C13.8351 1.69235 13.9527 1.66862 14.0715 1.66862C14.1903 1.66862 14.3078 1.69235 14.4173 1.73841C14.5268 1.78447 14.626 1.85194 14.709 1.93686C14.7959 2.01739 14.8647 2.11554 14.9106 2.22476C14.9566 2.33397 14.9788 2.45173 14.9757 2.57019C14.9802 2.68785 14.9611 2.80523 14.9196 2.91543C14.8781 3.02562 14.815 3.12641 14.734 3.21186L14.734 3.21186Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="Travel">
+										Travel
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51590;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0013">
+													<path fill="white" d="M9.08674 10.0057C8.59229 10.0057 8.10894 10.1523 7.69782 10.427C7.2867 10.7017 6.96626 11.0921 6.77704 11.549C6.58783 12.0058 6.53832 12.5084 6.63478 12.9934C6.73124 13.4783 6.96935 13.9238 7.31898 14.2734C7.66861 14.6231 8.11407 14.8612 8.59902 14.9576C9.08397 15.0541 9.58664 15.0046 10.0435 14.8154C10.5003 14.6261 10.8907 14.3057 11.1654 13.8946C11.4401 13.4835 11.5867 13.0001 11.5867 12.5057C11.5867 11.8426 11.3234 11.2067 10.8545 10.7379C10.3857 10.2691 9.74978 10.0057 9.08674 10.0057ZM9.08674 13.339C8.92193 13.339 8.76081 13.2901 8.62377 13.1986C8.48673 13.107 8.37992 12.9768 8.31684 12.8246C8.25377 12.6723 8.23727 12.5047 8.26942 12.3431C8.30158 12.1814 8.38094 12.033 8.49749 11.9164C8.61403 11.7999 8.76252 11.7205 8.92417 11.6883C9.08582 11.6562 9.25338 11.6727 9.40565 11.7358C9.55792 11.7988 9.68807 11.9056 9.77963 12.0427C9.8712 12.1797 9.92008 12.3408 9.92008 12.5057C9.92008 12.7267 9.83228 12.9386 9.676 13.0949C9.51972 13.2512 9.30776 13.339 9.08674 13.339ZM9.08674 6.67233C7.54069 6.67766 6.05887 7.29134 4.96174 8.38066C4.80653 8.5368 4.71942 8.74801 4.71942 8.96816C4.71942 9.18832 4.80653 9.39953 4.96174 9.55566C5.11788 9.71087 5.32909 9.79799 5.54924 9.79799C5.7694 9.79799 5.98061 9.71087 6.13674 9.55566C6.52379 9.16764 6.98359 8.85978 7.4898 8.64973C7.99601 8.43967 8.53868 8.33155 9.08674 8.33155C9.6348 8.33155 10.1775 8.43967 10.6837 8.64973C11.1899 8.85978 11.6497 9.16764 12.0367 9.55566C12.1906 9.71268 12.4003 9.80253 12.6201 9.80566C12.7892 9.8154 12.9572 9.77338 13.1018 9.68522C13.2464 9.59705 13.3607 9.46692 13.4295 9.31216C13.4983 9.15739 13.5183 8.98535 13.4868 8.81894C13.4553 8.65252 13.3739 8.49964 13.2534 8.38066C12.7051 7.83625 12.0549 7.40518 11.34 7.11206C10.6251 6.81894 9.85942 6.66952 9.08674 6.67233ZM9.08674 3.339C6.65673 3.34546 4.32722 4.3096 2.60341 6.02233C2.52571 6.10003 2.46408 6.19227 2.42203 6.29379C2.37998 6.39531 2.35833 6.50412 2.35833 6.614C2.35833 6.83592 2.44649 7.04874 2.60341 7.20566C2.76033 7.36258 2.97316 7.45074 3.19508 7.45074C3.41699 7.45074 3.62982 7.36258 3.78674 7.20566C5.193 5.80116 7.09924 5.01226 9.08674 5.01226C11.0743 5.01226 12.9805 5.80116 14.3867 7.20566C14.4646 7.2829 14.557 7.344 14.6585 7.38547C14.76 7.42694 14.8687 7.44797 14.9784 7.44733C15.0881 7.44797 15.1968 7.42694 15.2983 7.38547C15.3999 7.344 15.4922 7.2829 15.5701 7.20566C15.6482 7.1282 15.7102 7.03603 15.7525 6.93448C15.7948 6.83293 15.8166 6.72401 15.8166 6.614C15.8166 6.50399 15.7948 6.39507 15.7525 6.29352C15.7102 6.19197 15.6482 6.0998 15.5701 6.02233C13.8463 4.3096 11.5168 3.34546 9.08674 3.339ZM17.9284 3.664C16.7676 2.50242 15.3892 1.58096 13.8721 0.952272C12.355 0.323587 10.7289 3.70074e-16 9.08674 0C7.44455 3.70074e-16 5.81844 0.323587 4.30135 0.952272C2.78426 1.58096 1.40591 2.50242 0.245076 3.664C0.0881566 3.82092 0 4.03375 0 4.25566C-1.85037e-16 4.47758 0.0881566 4.69041 0.245076 4.84733C0.401996 5.00425 0.614825 5.09241 0.836743 5.09241C1.05866 5.09241 1.27149 5.00425 1.42841 4.84733C3.45989 2.8169 6.21454 1.67631 9.08674 1.67631C11.9589 1.67631 14.7136 2.8169 16.7451 4.84733C16.8225 4.92544 16.9147 4.98743 17.0163 5.02974C17.1178 5.07205 17.2267 5.09383 17.3367 5.09383C17.4468 5.09383 17.5557 5.07205 17.6572 5.02974C17.7588 4.98743 17.8509 4.92544 17.9284 4.84733C18.0065 4.76986 18.0685 4.67769 18.1108 4.57614C18.1531 4.4746 18.1749 4.36567 18.1749 4.25566C18.1749 4.14565 18.1531 4.03673 18.1108 3.93518C18.0685 3.83363 18.0065 3.74147 17.9284 3.664L17.9284 3.664Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="Travel">
+										Broadband
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51611;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0012">
+													<path fill="white" d="M8.30689 0C6.91333 0.00142551 5.54239 0.352304 4.31949 1.02053C3.09659 1.68875 2.0608 2.65299 1.30689 3.825L1.30689 3.825C0.246526 5.48796 -0.189657 7.47311 0.0759082 9.42741C0.341474 11.3817 1.29157 13.1785 2.75724 14.4982C4.22292 15.8179 6.10915 16.575 8.0805 16.6348C10.0519 16.6947 11.9805 16.0534 13.5236 14.825L13.5236 14.825C14.8665 13.744 15.8412 12.2732 16.3132 10.6151C16.7853 8.95708 16.7315 7.19343 16.1592 5.56723C15.587 3.94102 14.5245 2.53232 13.1181 1.53523C11.7118 0.538146 10.0308 0.00176407 8.30689 0L8.30689 0ZM9.97356 1.88333C11.1251 2.18141 12.1759 2.78215 13.017 3.62324C13.8581 4.46433 14.4588 5.51514 14.7569 6.66667C13.3635 6.70591 12.0035 7.10186 10.8069 7.81667C10.206 7.13499 9.5357 6.51777 8.80689 5.975C9.54117 4.73413 9.943 3.32486 9.97356 1.88333L9.97356 1.88333ZM8.30689 1.66667C8.30415 2.86252 7.97572 4.03504 7.35689 5.05833C7.23189 4.99167 7.11522 4.91667 6.99022 4.85833C5.91719 4.29216 4.76983 3.87978 3.58189 3.63333C4.20109 3.01043 4.93728 2.51603 5.74815 2.17852C6.55902 1.84102 7.42859 1.66707 8.30689 1.66667L8.30689 1.66667ZM2.47356 5.13333C3.78057 5.3149 5.0464 5.72087 6.21522 6.33333L6.32355 6.4C5.70848 7.0145 4.97819 7.50158 4.17454 7.83334C3.37088 8.1651 2.50966 8.33501 1.64022 8.33333C1.64486 7.21361 1.93145 6.11309 2.47356 5.13333L2.47356 5.13333ZM6.64022 14.7833C5.48869 14.4853 4.43788 13.8845 3.59679 13.0434C2.7557 12.2023 2.15496 11.1515 1.85689 10C2.96993 9.97529 4.06646 9.72555 5.08043 9.26582C6.0944 8.8061 7.00483 8.14591 7.75689 7.325C8.35932 7.77033 8.91745 8.27265 9.42356 8.825C8.5797 9.57741 7.89777 10.4937 7.41927 11.518C6.94077 12.5423 6.67571 13.6533 6.64022 14.7833L6.64022 14.7833ZM8.30689 15C8.30869 14.0845 8.49903 13.1791 8.86607 12.3404C9.2331 11.5017 9.76895 10.7476 10.4402 10.125C10.4902 10.1917 10.5402 10.25 10.5819 10.3167C11.2802 11.386 11.7982 12.5628 12.1152 13.8C10.9999 14.5831 9.6697 15.0023 8.30689 15ZM13.4819 12.5C13.12 11.3975 12.6157 10.347 11.9819 9.375L11.8069 9.16667C12.7758 8.62763 13.8648 8.34105 14.9736 8.33333C14.9653 9.85156 14.4391 11.3215 13.4819 12.5Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="SportsFitness">
+										Sports & Fitness
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51621;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0012">
+													<path fill="white" d="M5.42528 8.73664C5.26046 8.73664 5.09934 8.78552 4.9623 8.87709C4.82526 8.96865 4.71845 9.0988 4.65538 9.25108C4.5923 9.40335 4.5758 9.5709 4.60796 9.73255C4.64011 9.89421 4.71948 10.0427 4.83602 10.1592C4.95257 10.2758 5.10105 10.3551 5.2627 10.3873C5.42435 10.4195 5.59191 10.403 5.74418 10.3399C5.89645 10.2768 6.0266 10.17 6.11817 10.033C6.20974 9.89591 6.25861 9.7348 6.25861 9.56998C6.25861 9.34896 6.17081 9.137 6.01453 8.98072C5.85825 8.82444 5.64629 8.73664 5.42528 8.73664ZM5.42528 5.00331C5.26046 5.00331 5.09934 5.05219 4.9623 5.14375C4.82526 5.23532 4.71845 5.36547 4.65538 5.51774C4.5923 5.67001 4.5758 5.83757 4.60796 5.99922C4.64011 6.16087 4.71948 6.30936 4.83602 6.4259C4.95257 6.54244 5.10105 6.62181 5.2627 6.65397C5.42435 6.68612 5.59191 6.66962 5.74418 6.60654C5.89645 6.54347 6.0266 6.43666 6.11817 6.29962C6.20974 6.16258 6.25861 6.00146 6.25861 5.83665C6.25861 5.61563 6.17081 5.40367 6.01453 5.24739C5.85825 5.09111 5.64629 5.00331 5.42528 5.00331ZM8.33361 6.66998C8.1126 6.66998 7.90064 6.75778 7.74436 6.91406C7.58807 7.07034 7.50028 7.2823 7.50028 7.50331L7.50028 8.33665C7.50028 8.55766 7.58807 8.76962 7.74436 8.9259C7.90064 9.08218 8.1126 9.16998 8.33361 9.16998C8.55462 9.16998 8.76659 9.08218 8.92287 8.9259C9.07915 8.76962 9.16694 8.55766 9.16694 8.33665L9.16694 7.50331C9.16694 7.2823 9.07915 7.07034 8.92287 6.91406C8.76659 6.75778 8.55462 6.66998 8.33361 6.66998ZM15.4169 5.47831C15.1295 5.31291 14.812 5.20636 14.4829 5.16487C14.1538 5.12337 13.8198 5.14778 13.5003 5.23665C13.1677 5.32572 12.858 5.48483 12.5919 5.70331L2.92528 0.111646C2.79859 0.0385053 2.65489 0 2.50861 0C2.36233 0 2.21863 0.0385053 2.09194 0.111646C1.96322 0.184001 1.85604 0.289259 1.78136 0.416649C1.70668 0.544038 1.6672 0.688982 1.66694 0.836645L1.66694 11.8116C1.17516 11.9775 0.748753 12.2953 0.449213 12.7192C0.149673 13.143 -0.00752745 13.651 0.000277165 14.17C4.54271e-05 14.8216 0.254267 15.4476 0.708785 15.9146C1.1633 16.3816 1.78219 16.6526 2.43361 16.67L2.91694 16.67C5.64756 16.6636 8.32786 15.9347 10.6857 14.5575C13.0436 13.1802 14.995 11.2036 16.3419 8.82831C16.653 8.25998 16.7313 7.59307 16.5603 6.96814C16.3893 6.34322 15.9824 5.80908 15.4253 5.47831L15.4169 5.47831ZM3.33361 2.27831L11.5753 7.03665C10.6609 8.40099 9.43859 9.53121 8.00693 10.3361C6.57527 11.1409 4.97442 11.5979 3.33361 11.67L3.33361 2.27831ZM14.8919 8.01165C13.6548 10.1914 11.8481 11.9935 9.66526 13.2251C7.48242 14.4568 5.00568 15.0714 2.50028 15.0033C2.27926 15.0033 2.0673 14.9155 1.91102 14.7592C1.75474 14.603 1.66694 14.391 1.66694 14.17C1.66629 14.0583 1.68809 13.9477 1.73103 13.8446C1.77398 13.7415 1.8372 13.6481 1.91694 13.57C2.0735 13.4191 2.28284 13.3353 2.50028 13.3366L2.92528 13.3366C5.06504 13.3358 7.1662 12.7667 9.01395 11.6876C10.8617 10.6086 12.3898 9.05818 13.4419 7.19498C13.4925 7.10357 13.5616 7.02374 13.6449 6.96059C13.7281 6.89745 13.8236 6.8524 13.9253 6.82831C14.1354 6.77064 14.3598 6.79756 14.5503 6.90331C14.7415 7.00608 14.885 7.1794 14.9504 7.38639C15.0158 7.59338 14.9978 7.81771 14.9003 8.01165L14.8919 8.01165Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="Travel">
+										Food
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51630;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0012">
+													<path fill="white" d="M9.96199 13.388C10.183 13.388 10.395 13.3002 10.5512 13.1439C10.7075 12.9876 10.7953 12.7757 10.7953 12.5546L10.7953 10.888C10.7953 10.667 10.7075 10.455 10.5512 10.2987C10.395 10.1424 10.183 10.0546 9.96199 10.0546C9.74097 10.0546 9.52901 10.1424 9.37273 10.2987C9.21645 10.455 9.12865 10.667 9.12865 10.888L9.12865 12.5546C9.12865 12.7757 9.21645 12.9876 9.37273 13.1439C9.52901 13.3002 9.74097 13.388 9.96199 13.388ZM6.62865 13.388C6.84967 13.388 7.06163 13.3002 7.21791 13.1439C7.37419 12.9876 7.46199 12.7757 7.46199 12.5546L7.46199 10.888C7.46199 10.667 7.37419 10.455 7.21791 10.2987C7.06163 10.1424 6.84967 10.0546 6.62865 10.0546C6.40764 10.0546 6.19568 10.1424 6.0394 10.2987C5.88312 10.455 5.79532 10.667 5.79532 10.888L5.79532 12.5546C5.79532 12.7757 5.88312 12.9876 6.0394 13.1439C6.19568 13.3002 6.40764 13.388 6.62865 13.388ZM14.1287 3.38798L12.9787 3.38798L11.537 0.512982C11.4929 0.407193 11.4275 0.311627 11.3449 0.232256C11.2622 0.152884 11.1641 0.0914131 11.0566 0.0516841C10.9491 0.0119552 10.8346 -0.00517793 10.7202 0.00135558C10.6058 0.00788908 10.4939 0.0379488 10.3917 0.0896562C10.2894 0.141364 10.1989 0.213607 10.1258 0.301873C10.0527 0.390138 9.99864 0.492528 9.96692 0.602644C9.9352 0.71276 9.92653 0.828236 9.94145 0.941854C9.95637 1.05547 9.99457 1.16479 10.0537 1.26298L11.112 3.38798L5.47865 3.38798L6.53699 1.26298C6.61787 1.06874 6.62229 0.851084 6.54934 0.653721C6.47639 0.456358 6.33148 0.293896 6.1437 0.198954C5.95593 0.104011 5.73919 0.0836168 5.537 0.141865C5.33481 0.200113 5.16214 0.332691 5.05365 0.512982L3.61199 3.38798L2.46199 3.38798C1.87298 3.39694 1.30605 3.6136 0.861193 3.99976C0.416337 4.38591 0.12213 4.91675 0.0304609 5.49865C-0.0612085 6.08056 0.0555489 6.67614 0.36014 7.18036C0.664732 7.68457 1.13759 8.06504 1.69532 8.25465L2.31199 14.4713C2.37417 15.0901 2.66477 15.6635 3.12705 16.0796C3.58932 16.4956 4.19007 16.7244 4.81199 16.7213L11.7953 16.7213C12.4172 16.7244 13.018 16.4956 13.4803 16.0796C13.9425 15.6635 14.2331 15.0901 14.2953 14.4713L14.912 8.25465C15.4709 8.06448 15.9445 7.68262 16.2489 7.17672C16.5533 6.67081 16.6688 6.07351 16.575 5.4906C16.4811 4.90769 16.184 4.3768 15.7363 3.99196C15.2885 3.60712 14.719 3.39316 14.1287 3.38798L14.1287 3.38798ZM12.6203 14.3046C12.5996 14.5109 12.5027 14.7021 12.3486 14.8407C12.1945 14.9794 11.9943 15.0557 11.787 15.0546L4.80365 15.0546C4.59635 15.0557 4.3961 14.9794 4.24201 14.8407C4.08791 14.7021 3.99105 14.5109 3.97032 14.3046L3.37865 8.38798L13.212 8.38798L12.6203 14.3046ZM14.1287 6.72131L2.46199 6.72131C2.24097 6.72131 2.02901 6.63352 1.87273 6.47724C1.71645 6.32096 1.62865 6.109 1.62865 5.88798C1.62865 5.66697 1.71645 5.45501 1.87273 5.29873C2.02901 5.14245 2.24097 5.05465 2.46199 5.05465L14.1287 5.05465C14.3497 5.05465 14.5616 5.14245 14.7179 5.29873C14.8742 5.45501 14.962 5.66697 14.962 5.88798C14.962 6.109 14.8742 6.32096 14.7179 6.47724C14.5616 6.63352 14.3497 6.72131 14.1287 6.72131Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="Travel">
+										Fashion
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51639;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0017">
+													<path fill="white" d="M14.1667 5.01994L9.16675 0.63661C8.70839 0.226648 8.11502 1.85037e-16 7.50008 0C6.88513 1.85037e-16 6.29176 0.226648 5.83341 0.63661L0.833412 5.01994C0.568719 5.25667 0.357496 5.54707 0.213806 5.87181C0.0701154 6.19655 -0.0027438 6.54818 7.89951e-05 6.90328L7.89951e-05 14.1866C7.89951e-05 14.8497 0.263471 15.4855 0.732312 15.9544C1.20115 16.4232 1.83704 16.6866 2.50008 16.6866L12.5001 16.6866C13.1631 16.6866 13.799 16.4232 14.2678 15.9544C14.7367 15.4855 15.0001 14.8497 15.0001 14.1866L15.0001 6.89494C15.0017 6.54125 14.9283 6.19123 14.7846 5.86801C14.641 5.5448 14.4304 5.25574 14.1667 5.01994L14.1667 5.01994ZM9.16675 15.0199L5.83341 15.0199L5.83341 10.8533C5.83341 10.6323 5.92121 10.4203 6.07749 10.264C6.23377 10.1077 6.44573 10.0199 6.66675 10.0199L8.33341 10.0199C8.55443 10.0199 8.76639 10.1077 8.92267 10.264C9.07895 10.4203 9.16675 10.6323 9.16675 10.8533L9.16675 15.0199ZM13.3334 14.1866C13.3334 14.4076 13.2456 14.6196 13.0893 14.7759C12.9331 14.9321 12.7211 15.0199 12.5001 15.0199L10.8334 15.0199L10.8334 10.8533C10.8334 10.1902 10.57 9.55435 10.1012 9.08551C9.63234 8.61667 8.99645 8.35328 8.33341 8.35328L6.66675 8.35328C6.0037 8.35328 5.36782 8.61667 4.89898 9.08551C4.43014 9.55435 4.16675 10.1902 4.16675 10.8533L4.16675 15.0199L2.50008 15.0199C2.27907 15.0199 2.0671 14.9321 1.91082 14.7759C1.75454 14.6196 1.66675 14.4076 1.66675 14.1866L1.66675 6.89494C1.6669 6.77662 1.69224 6.65969 1.74109 6.55193C1.78995 6.44416 1.86119 6.34803 1.95008 6.26994L6.95008 1.89494C7.10215 1.76134 7.29766 1.68766 7.50008 1.68766C7.7025 1.68766 7.898 1.76134 8.05008 1.89494L13.0501 6.26994C13.139 6.34803 13.2102 6.44416 13.2591 6.55193C13.3079 6.65969 13.3333 6.77662 13.3334 6.89494L13.3334 14.1866Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="SportsFitness">
+										Home & Living
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51648;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+							<div id="_1">
+								<div id="Frame6">
+									<div id="Button">
+										<div id="ButtonBase_0006">
+											<div id="MapPin">
+												<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0018">
+													<path fill="white" d="M15.8333 5.25944L13.75 5.25944C13.6398 5.25989 13.5307 5.28223 13.4291 5.32514C13.3276 5.36805 13.2355 5.4307 13.1583 5.50944L12.125 6.58444L9.79168 3.9261C9.71373 3.84284 9.61952 3.77647 9.51488 3.7311C9.41024 3.68572 9.2974 3.66231 9.18334 3.66231C9.06929 3.66231 8.95645 3.68572 8.85181 3.7311C8.74717 3.77647 8.65296 3.84284 8.57501 3.9261L7.15834 5.34277L5.83334 5.34277C5.61233 5.34277 5.40037 5.43057 5.24409 5.58685C5.08781 5.74313 5.00001 5.95509 5.00001 6.1761C5.00001 6.39712 5.08781 6.60908 5.24409 6.76536C5.40037 6.92164 5.61233 7.00944 5.83334 7.00944L7.50001 7.00944C7.60968 7.01007 7.7184 6.98905 7.81993 6.94758C7.92146 6.90611 8.01381 6.845 8.09168 6.76777L9.16668 5.6511L11.5 8.30944C11.5753 8.39524 11.6674 8.46466 11.7706 8.5134C11.8738 8.56213 11.9859 8.58915 12.1 8.59277C12.2097 8.5934 12.3184 8.57238 12.4199 8.53091C12.5215 8.48944 12.6138 8.42834 12.6917 8.3511L14.1083 6.9261L15.8333 6.9261C16.0544 6.9261 16.2663 6.8383 16.4226 6.68202C16.5789 6.52574 16.6667 6.31378 16.6667 6.09277C16.6667 5.87176 16.5789 5.65979 16.4226 5.50351C16.2663 5.34723 16.0544 5.25944 15.8333 5.25944ZM9.67501 9.6761L8.09168 11.2594C8.01421 11.3375 7.92204 11.3995 7.82049 11.4418C7.71894 11.4842 7.61002 11.5059 7.50001 11.5059C7.39 11.5059 7.28108 11.4842 7.17953 11.4418C7.07798 11.3995 6.98581 11.3375 6.90834 11.2594L2.56668 6.91777C2.28094 6.6322 2.05428 6.29314 1.89963 5.91994C1.74498 5.54675 1.66538 5.14674 1.66538 4.74277C1.66538 4.3388 1.74498 3.93879 1.89963 3.56559C2.05428 3.1924 2.28094 2.85333 2.56668 2.56777C3.14306 1.99324 3.92369 1.67064 4.73751 1.67064C5.55133 1.67064 6.33196 1.99324 6.90834 2.56777C6.98581 2.64588 7.07798 2.70787 7.17953 2.75018C7.28108 2.79249 7.39 2.81427 7.50001 2.81427C7.61002 2.81427 7.71894 2.79249 7.82049 2.75018C7.92204 2.70787 8.01421 2.64588 8.09168 2.56777C8.67723 2.01087 9.45442 1.70031 10.2625 1.70031C11.0706 1.70031 11.8478 2.01087 12.4333 2.56777C12.619 2.75589 12.7813 2.96574 12.9167 3.19277C13.038 3.35961 13.2169 3.47552 13.4188 3.51806C13.6207 3.5606 13.8311 3.52675 14.0095 3.42306C14.1878 3.31937 14.3214 3.15321 14.3843 2.95673C14.4472 2.76025 14.435 2.54743 14.35 2.35944C14.144 2.01739 13.8978 1.70125 13.6167 1.41777C12.8258 0.617645 11.7759 0.125355 10.655 0.029149C9.53412 -0.0670571 8.41563 0.239111 7.50001 0.892769C6.79239 0.383014 5.9577 0.0786657 5.08804 0.0133112C4.21839 -0.0520432 3.34758 0.124137 2.57172 0.52241C1.79587 0.920682 1.14513 1.52556 0.691319 2.2703C0.237508 3.01503 -0.00172877 3.87066 9.40449e-06 4.74277C-0.000240247 5.36284 0.122648 5.9768 0.361545 6.54901C0.600442 7.12121 0.950591 7.64028 1.39168 8.0761L5.73334 12.4178C6.20209 12.8859 6.83751 13.1489 7.50001 13.1489C8.16251 13.1489 8.79792 12.8859 9.26668 12.4178L10.8333 10.8511C10.9886 10.695 11.0757 10.4838 11.0757 10.2636C11.0757 10.0434 10.9886 9.83224 10.8333 9.6761C10.678 9.5259 10.4703 9.44194 10.2542 9.44194C10.0381 9.44194 9.8304 9.5259 9.67501 9.6761Z">
+														
+													</path>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<span id="SportsFitness">
+										Health & Beauty
+									</span>
+									<div id="Shop">
+										<img src="grida://assets-reservation/images/I4628:51657;1027:6649"
+			alt="image of Icon"
+			id="Icon_0005">
+											
+										</img>
+									</div>
+								</div>
+								<div id="Divider">
+									
+								</div>
+							</div>
+						</div>
+						<span id="ViewAllCategories">
+							View All Categories
+						</span>
+					</div>
+				</div>
+				<div id="Slider">
+					<img src="grida://assets-reservation/images/4628:51584"
+			alt="image of Rectangle2"
+			id="Rectangle2">
+						
+					</img>
+					<div id="Rectangle3">
+						
+					</div>
+					<span id="OnlyLegitSaleNothingElse">
+						ONLY LEGIT SALE<br/>
+		NOTHING ELSE
+					</span>
+					<div id="ButtonBase_0013">
+						<span id="Text_0008">
+							Shop Now
+						</span>
+					</div>
+					<div id="ButtonBase_0014">
+						<div id="MapPin">
+							<img src="grida://assets-reservation/images/I4628:51951;1054:7059;1027:6973"
+			alt="image of Icon"
+			id="Icon_0012">
+								
+							</img>
+						</div>
+					</div>
+					<div id="ButtonBase_0015">
+						<div id="MapPin">
+							<img src="grida://assets-reservation/images/I4628:51956;1054:7059;1027:6649"
+			alt="image of Icon"
+			id="Icon_0012">
+								
+							</img>
+						</div>
+					</div>
+					<div id="Group1">
+						<div id="Rectangle3_0001">
+							
+						</div>
+						<span id="_30DiscountOnHelloFreah">
+							30 % Discount on Hello Freah
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="Stripe_0001">
+				<div id="Rectangle4">
+					
+				</div>
+				<span id="WhenYouBuyThroughLinksOnDealbuddyWeMayEarnACommissionLearnMore">
+					When you buy through links on dealbuddy, we may earn a commission. Learn More
+				</span>
+			</div>
+			<div id="Deals">
+				<img src="grida://assets-reservation/images/4638:51615"
+			alt="image of Rectangle2"
+			id="Rectangle2_0001">
+					
+				</img>
+				<div id="Rectangle3_0002">
+					
+				</div>
+				<span id="Sale">
+					Sale
+				</span>
+				<span id="ShopTodaySTrendingSaleAndSaveBig">
+					Shop Today’s Trending Sale and Save Big
+				</span>
+			</div>
+			<div id="Coupons">
+				<img src="grida://assets-reservation/images/4638:51621"
+			alt="image of Rectangle2"
+			id="Rectangle2_0001">
+					
+				</img>
+				<div id="Rectangle3_0002">
+					
+				</div>
+				<span id="Coupons_0001">
+					Coupons
+				</span>
+				<span id="UseThisCouponsToSaveAtCheckoutOnlineOrInStore">
+					Use This Coupons to Save at Checkout, Online or In-store
+				</span>
+			</div>
+			<div id="PopularDealsCoupons">
+				<div id="PopularDeals">
+					<div id="Title">
+						<span id="PopularSale">
+							Popular Sale
+						</span>
+						<div id="Button_0007">
+							<div id="ButtonBase_0016">
+								<span id="Text_0009">
+									View More
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="Frame19">
+						<div id="Frame17">
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51688;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51688;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51688;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51688;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51688;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51688;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51688;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0008">
+										<div id="ButtonBase_0017">
+											<span id="Text_0009">
+												Food
+											</span>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51688;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51688;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE / ONLINE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Flat 10% OFF On Double Cheese Margherita
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51688;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51688;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51726;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51726;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51726;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51726;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51726;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51726;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51726;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0008">
+										<div id="ButtonBase_0017">
+											<span id="Text_0009">
+												Travel
+											</span>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51726;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51726;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - ONLINE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Sail away aboard the MSC Bellissima and enjoy limitless 
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														Travel Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51726;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="MultipleLocation_0001">
+														Auckland
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51726;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51765;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51765;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51765;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51765;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51765;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51765;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51765;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0008">
+										<div id="ButtonBase_0017">
+											<span id="Text_0009">
+												Broadband
+											</span>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51765;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51765;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Unlimited Broadbalnd Plan with 80GBPS Speed
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														Broadband Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51765;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51765;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51803;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51803;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51803;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51803;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51803;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51803;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51803;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0017">
+										<div id="Button_0018">
+											<div id="ButtonBase_0017">
+												<span id="Text_0009">
+													Sport & Fitness
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51803;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51803;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Buy a Gold's Gym Member-ship Today
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														Gold’s Gym
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51803;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51803;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Frame17">
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51842;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51842;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51842;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51842;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51842;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51842;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51842;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0008">
+										<div id="ButtonBase_0017">
+											<span id="Text_0009">
+												Fashion
+											</span>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51842;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51842;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE / ONLINE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Ray-Ban Sunglasses Hexagonal RB3548N 
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51842;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51842;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51843;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51843;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51843;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51843;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51843;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51843;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51843;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0017">
+										<div id="Button_0018">
+											<div id="ButtonBase_0017">
+												<span id="Text_0009">
+													Home & Living
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51843;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51843;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE / ONLINE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Professional Carpet Shampoo Clean - Within 15km
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51843;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51843;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51844;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51844;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51844;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51844;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51844;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51844;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51844;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0017">
+										<div id="Button_0018">
+											<div id="ButtonBase_0017">
+												<span id="Text_0009">
+													Health & Beauty
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51844;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51844;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE / ONLINE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Six Sessions of Laser Hair Removal in Botany Junction
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51844;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51844;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Deal">
+								<div id="Rectangle5">
+									
+								</div>
+								<div id="Group2">
+									<img src="grida://assets-reservation/images/I4638:51845;4638:51630"
+			alt="image of Rectangle6"
+			id="Rectangle6">
+										
+									</img>
+									<div id="Group6">
+										<div id="Rectangle7">
+											
+										</div>
+										<div id="Frame11">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:51845;4668:54301;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:51845;4668:54304;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51845;4668:54304;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51845;4668:54304;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51845;4668:54304;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51845;4668:54304;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0017">
+										<div id="Button_0018">
+											<div id="ButtonBase_0017">
+												<span id="Text_0009">
+													Sport & Fitness
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0009">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:51845;6676:62931;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:51845;6676:62931;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame16">
+									<div id="Frame19">
+										<div id="Frame14">
+											<div id="Frame12">
+												<span id="SaleInStoreOnline">
+													SALE - IN STORE / ONLINE
+												</span>
+												<span id="Flat10OffOnDoubleCheeseMargherita">
+													Interior or Exterior Car Valet in Auckland 
+												</span>
+											</div>
+											<div id="Frame12">
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51845;4638:51651;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0007">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:51845;4638:51659;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="NwStore">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+										</div>
+										<div id="Button_0010">
+											<div id="ButtonBase_0019">
+												<span id="Text_0009">
+													View Sale
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="PopularDeals">
+					<div id="Title">
+						<span id="PopularSale">
+							Popular Coupons
+						</span>
+						<div id="Button_0007">
+							<div id="ButtonBase_0016">
+								<span id="Text_0009">
+									View More
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="Frame19">
+						<div id="Frame17">
+							<div id="Coupon">
+								<div id="Frame27">
+									<img src="grida://assets-reservation/images/I4638:52754;4668:58486"
+			alt="image of Rectangle6"
+			id="Rectangle6_0008">
+										
+									</img>
+									<div id="Group6_0008">
+										<div id="Rectangle7_0008">
+											
+										</div>
+										<div id="Frame11_0008">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:52754;4668:58491;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58494;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58494;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58494;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58494;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58494;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0037">
+										<div id="ButtonBase_0017">
+											<span id="Text_0027">
+												Food
+											</span>
+										</div>
+									</div>
+									<div id="Frame12_0008">
+										<span id="CouponInStoreOnline">
+											COUPON - IN STORE / ONLINE
+										</span>
+										<span id="TopCategories_0001">
+											Flat 10% OFF On Double Cheese Margherita
+										</span>
+									</div>
+									<div id="Button_0038">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:52754;6676:64682;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52754;6676:64682;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame24">
+									<div id="Frame23">
+										<div id="Frame22">
+											<div id="Frame13_0008">
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore_0008">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58508;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore_0008">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52754;4668:58511;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="ExpireIn42Days_0008">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+											<div id="Button_0039">
+												<div id="ButtonBase_0044">
+													<span id="Text_0009">
+														Show Code
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Ellipse1">
+									
+								</div>
+								<div id="Ellipse2">
+									
+								</div>
+							</div>
+							<div id="Coupon">
+								<div id="Frame27">
+									<img src="grida://assets-reservation/images/I4638:52795;4668:58486"
+			alt="image of Rectangle6"
+			id="Rectangle6_0008">
+										
+									</img>
+									<div id="Group6_0008">
+										<div id="Rectangle7_0008">
+											
+										</div>
+										<div id="Frame11_0008">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:52795;4668:58491;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58494;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58494;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58494;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58494;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58494;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0037">
+										<div id="ButtonBase_0017">
+											<span id="Text_0027">
+												Food
+											</span>
+										</div>
+									</div>
+									<div id="Frame12_0008">
+										<span id="CouponInStoreOnline">
+											COUPON - IN STORE / ONLINE
+										</span>
+										<span id="TopCategories_0001">
+											Sail away aboard the MSC Bellissima and enjoy limitless 
+										</span>
+									</div>
+									<div id="Button_0038">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:52795;6676:64682;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52795;6676:64682;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame24">
+									<div id="Frame23">
+										<div id="Frame22">
+											<div id="Frame13_0008">
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore_0008">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58508;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore_0008">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52795;4668:58511;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="ExpireIn42Days_0008">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+											<div id="Button_0039">
+												<div id="ButtonBase_0044">
+													<span id="Text_0009">
+														Show Code
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Ellipse1">
+									
+								</div>
+								<div id="Ellipse2">
+									
+								</div>
+							</div>
+						</div>
+						<div id="Frame17">
+							<div id="Coupon">
+								<div id="Frame27">
+									<img src="grida://assets-reservation/images/I4638:52838;4668:58486"
+			alt="image of Rectangle6"
+			id="Rectangle6_0008">
+										
+									</img>
+									<div id="Group6_0008">
+										<div id="Rectangle7_0008">
+											
+										</div>
+										<div id="Frame11_0008">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:52838;4668:58491;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58494;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58494;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58494;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58494;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58494;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0037">
+										<div id="ButtonBase_0017">
+											<span id="Text_0027">
+												Food
+											</span>
+										</div>
+									</div>
+									<div id="Frame12_0008">
+										<span id="CouponInStoreOnline">
+											COUPON - IN STORE / ONLINE
+										</span>
+										<span id="TopCategories_0001">
+											Six Sessions of Laser Hair Removal in Botany Junction
+										</span>
+									</div>
+									<div id="Button_0038">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:52838;6676:64682;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52838;6676:64682;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame24">
+									<div id="Frame23">
+										<div id="Frame22">
+											<div id="Frame13_0008">
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore_0008">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58508;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore_0008">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52838;4668:58511;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="ExpireIn42Days_0008">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+											<div id="Button_0039">
+												<div id="ButtonBase_0044">
+													<span id="Text_0009">
+														Show Code
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Ellipse1">
+									
+								</div>
+								<div id="Ellipse2">
+									
+								</div>
+							</div>
+							<div id="Coupon">
+								<div id="Frame27">
+									<img src="grida://assets-reservation/images/I4638:52839;4668:58486"
+			alt="image of Rectangle6"
+			id="Rectangle6_0008">
+										
+									</img>
+									<div id="Group6_0008">
+										<div id="Rectangle7_0008">
+											
+										</div>
+										<div id="Frame11_0008">
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<img src="grida://assets-reservation/images/I4638:52839;4668:58491;1037:34262"
+			alt="image of Icon"
+			id="Icon_0014">
+														
+													</img>
+												</div>
+												<span id="_500">
+													500
+												</span>
+											</div>
+											<div id="Frame9_0001">
+												<div id="ChevronDown">
+													<div id="Group">
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58494;4668:54959"
+			alt="image of Vector"
+			id="Vector_0019">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58494;4668:54960"
+			alt="image of Vector"
+			id="Vector_0020">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58494;4668:54961"
+			alt="image of Vector"
+			id="Vector_0021">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58494;4668:54962"
+			alt="image of Vector"
+			id="Vector_0022">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58494;4668:54963"
+			alt="image of Vector"
+			id="Vector_0023">
+															
+														</img>
+													</div>
+												</div>
+												<span id="_500">
+													200
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="Button_0037">
+										<div id="ButtonBase_0017">
+											<span id="Text_0027">
+												Food
+											</span>
+										</div>
+									</div>
+									<div id="Frame12_0008">
+										<span id="CouponInStoreOnline">
+											COUPON - IN STORE / ONLINE
+										</span>
+										<span id="TopCategories_0001">
+											Professional Carpet Shampoo Clean - Within 15km
+										</span>
+									</div>
+									<div id="Button_0038">
+										<div id="ButtonBase_0018">
+											<div id="Heart">
+												<div id="VuesaxLinearHeart">
+													<div id="VuesaxLinearHeart">
+														<img src="grida://assets-reservation/images/I4638:52839;6676:64682;1054:1492;1054:7053;4367:55146"
+			alt="image of Vector"
+			id="Vector_0024">
+															
+														</img>
+														<img src="grida://assets-reservation/images/I4638:52839;6676:64682;1054:1492;1054:7053;4367:55147"
+			alt="image of Vector"
+			id="Vector_0002">
+															
+														</img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Frame24">
+									<div id="Frame23">
+										<div id="Frame22">
+											<div id="Frame13_0008">
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<svg xmlns="http://www.w3.org/2000/svg" id="Vector_0026">
+															<path fill="black" d="M17.5 0L0.833333 0C0.61232 3.70074e-16 0.400358 0.0877973 0.244078 0.244078C0.0877973 0.400358 1.85037e-16 0.61232 0 0.833333L0 4.16667C0.00144959 4.68245 0.162399 5.18517 0.460782 5.60589C0.759165 6.02661 1.18038 6.34474 1.66667 6.51667L1.66667 15.8333C1.66667 16.0543 1.75446 16.2663 1.91074 16.4226C2.06702 16.5789 2.27899 16.6667 2.5 16.6667L15.8333 16.6667C16.0543 16.6667 16.2663 16.5789 16.4226 16.4226C16.5789 16.2663 16.6667 16.0543 16.6667 15.8333L16.6667 6.51667C17.153 6.34474 17.5742 6.02661 17.8725 5.60589C18.1709 5.18517 18.3319 4.68245 18.3333 4.16667L18.3333 0.833333C18.3333 0.61232 18.2455 0.400358 18.0893 0.244078C17.933 0.0877973 17.721 5.55112e-16 17.5 0ZM11.6667 1.66667L13.3333 1.66667L13.3333 4.16667C13.3333 4.38768 13.2455 4.59964 13.0893 4.75592C12.933 4.9122 12.721 5 12.5 5C12.279 5 12.067 4.9122 11.9107 4.75592C11.7545 4.59964 11.6667 4.38768 11.6667 4.16667L11.6667 1.66667ZM8.33333 1.66667L10 1.66667L10 4.16667C10 4.38768 9.9122 4.59964 9.75592 4.75592C9.59964 4.9122 9.38768 5 9.16667 5C8.94565 5 8.73369 4.9122 8.57741 4.75592C8.42113 4.59964 8.33333 4.38768 8.33333 4.16667L8.33333 1.66667ZM5 1.66667L6.66667 1.66667L6.66667 4.16667C6.66667 4.38768 6.57887 4.59964 6.42259 4.75592C6.26631 4.9122 6.05435 5 5.83333 5C5.61232 5 5.40036 4.9122 5.24408 4.75592C5.0878 4.59964 5 4.38768 5 4.16667L5 1.66667ZM2.5 5C2.27899 5 2.06702 4.9122 1.91074 4.75592C1.75446 4.59964 1.66667 4.38768 1.66667 4.16667L1.66667 1.66667L3.33333 1.66667L3.33333 4.16667C3.33333 4.38768 3.24554 4.59964 3.08926 4.75592C2.93297 4.9122 2.72101 5 2.5 5ZM10.8333 15L7.5 15L7.5 11.6667C7.5 11.2246 7.67559 10.8007 7.98815 10.4882C8.30072 10.1756 8.72464 10 9.16667 10C9.60869 10 10.0326 10.1756 10.3452 10.4882C10.6577 10.8007 10.8333 11.2246 10.8333 11.6667L10.8333 15ZM15 15L12.5 15L12.5 11.6667C12.5 10.7826 12.1488 9.93477 11.5237 9.30964C10.8986 8.68452 10.0507 8.33333 9.16667 8.33333C8.28261 8.33333 7.43476 8.68452 6.80964 9.30964C6.18452 9.93477 5.83333 10.7826 5.83333 11.6667L5.83333 15L3.33333 15L3.33333 6.51667C3.63964 6.40297 3.9222 6.23343 4.16667 6.01667C4.62502 6.42663 5.21839 6.65328 5.83333 6.65328C6.44828 6.65328 7.04165 6.42663 7.5 6.01667C7.95835 6.42663 8.55172 6.65328 9.16667 6.65328C9.78161 6.65328 10.375 6.42663 10.8333 6.01667C11.2917 6.42663 11.8851 6.65328 12.5 6.65328C13.1149 6.65328 13.7083 6.42663 14.1667 6.01667C14.4111 6.23343 14.6937 6.40297 15 6.51667L15 15ZM16.6667 4.16667C16.6667 4.38768 16.5789 4.59964 16.4226 4.75592C16.2663 4.9122 16.0543 5 15.8333 5C15.6123 5 15.4004 4.9122 15.2441 4.75592C15.0878 4.59964 15 4.38768 15 4.16667L15 1.66667L16.6667 1.66667L16.6667 4.16667Z">
+																
+															</path>
+														</svg>
+													</div>
+													<span id="NwStore_0008">
+														NW Store
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58508;1037:34233"
+			alt="image of Icon"
+			id="Icon">
+															
+														</img>
+													</div>
+													<span id="NwStore_0008">
+														Multiple Location
+													</span>
+												</div>
+												<div id="Frame6_0015">
+													<div id="MapPin">
+														<img src="grida://assets-reservation/images/I4638:52839;4668:58511;1037:33980"
+			alt="image of Icon"
+			id="Icon_0016">
+															
+														</img>
+													</div>
+													<span id="ExpireIn42Days_0008">
+														Expire in 42 Days
+													</span>
+												</div>
+											</div>
+											<div id="Button_0039">
+												<div id="ButtonBase_0044">
+													<span id="Text_0009">
+														Show Code
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="Ellipse1">
+									
+								</div>
+								<div id="Ellipse2">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SponsorPost">
+				<div id="Rectangle7_0012">
+					
+				</div>
+				<div id="Sponsor">
+					<div id="Rectangle5">
+						
+					</div>
+					<div id="Group3">
+						<div id="Rectangle9">
+							
+						</div>
+						<img src="grida://assets-reservation/images/I4642:52937;4642:52930"
+			alt="image of Image1"
+			id="Image1">
+							
+						</img>
+					</div>
+					<div id="Frame32">
+						<span id="TopCategories_0001">
+							Starbucks
+						</span>
+						<span id="CouponInStoreOnline">
+							Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula
+						</span>
+					</div>
+				</div>
+				<div id="Sponsor_0001">
+					<div id="Rectangle5">
+						
+					</div>
+					<div id="Group3">
+						<div id="Rectangle9">
+							
+						</div>
+						<img src="grida://assets-reservation/images/I4642:52945;4642:52930"
+			alt="image of Image1"
+			id="Image1">
+							
+						</img>
+					</div>
+					<div id="Frame32">
+						<span id="TopCategories_0001">
+							Biffco Enterprises Ltd.
+						</span>
+						<span id="CouponInStoreOnline">
+							Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula
+						</span>
+					</div>
+				</div>
+				<div id="Sponsor_0002">
+					<div id="Rectangle5">
+						
+					</div>
+					<div id="Group3">
+						<div id="Rectangle9">
+							
+						</div>
+						<img src="grida://assets-reservation/images/I4642:52953;4642:52930"
+			alt="image of Image1"
+			id="Image1">
+							
+						</img>
+					</div>
+					<div id="Frame32">
+						<span id="TopCategories_0001">
+							Black & Decker
+						</span>
+						<span id="CouponInStoreOnline">
+							Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula
+						</span>
+					</div>
+				</div>
+				<div id="Sponsor_0003">
+					<div id="Rectangle5">
+						
+					</div>
+					<div id="Group3">
+						<div id="Rectangle9">
+							
+						</div>
+						<img src="grida://assets-reservation/images/I4642:52961;4642:52930"
+			alt="image of Image1"
+			id="Image1">
+							
+						</img>
+					</div>
+					<div id="Frame32">
+						<span id="TopCategories_0001">
+							Barone LLC.
+						</span>
+						<span id="CouponInStoreOnline">
+							Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula
+						</span>
+					</div>
+				</div>
+				<span id="SponsorAds">
+					Sponsor Ads
+				</span>
+				<div id="Button_0049">
+					<div id="ButtonBase_0054">
+						<div id="MapPin">
+							<img src="grida://assets-reservation/images/I4638:52924;1054:1492;1054:7053;1027:6649"
+			alt="image of Icon"
+			id="Icon_0012">
+								
+							</img>
+						</div>
+					</div>
+				</div>
+				<div id="Button_0050">
+					<div id="ButtonBase_0054">
+						<div id="MapPin">
+							<img src="grida://assets-reservation/images/I4642:52973;1054:1492;1054:7053;1027:6649"
+			alt="image of Icon"
+			id="Icon_0012">
+								
+							</img>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Stores">
+				<span id="PopularSale">
+					Popular Stores
+				</span>
+				<div id="Button_0007">
+					<div id="ButtonBase_0016">
+						<span id="Text_0009">
+							View More
+						</span>
+					</div>
+				</div>
+				<div id="Frame36">
+					<div id="Frame17">
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53034;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53034;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="Flat10OffOnDoubleCheeseMargherita">
+									FreshSales
+								</span>
+							</div>
+						</div>
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53040;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53040;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="SixSessionsOfLaser_0005">
+									Jordan Crown
+								</span>
+							</div>
+						</div>
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53047;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53047;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="SixSessionsOfLaser_0005">
+									Konstant Infosolutions
+								</span>
+							</div>
+						</div>
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53053;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53053;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="Flat10OffOnDoubleCheeseMargherita">
+									Bynd
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="Frame17">
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53060;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53060;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="Flat10OffOnDoubleCheeseMargherita">
+									Ideo
+								</span>
+							</div>
+						</div>
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53061;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53061;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="Flat10OffOnDoubleCheeseMargherita">
+									Ramotion
+								</span>
+							</div>
+						</div>
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53062;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53062;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="Flat10OffOnDoubleCheeseMargherita">
+									Hubspot
+								</span>
+							</div>
+						</div>
+						<div id="Store">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53063;4642:53027"
+			alt="image of UnsplashE8Ufcyxz514"
+			id="UnsplashE8Ufcyxz514">
+								
+							</img>
+							<div id="Frame33">
+								<img src="grida://assets-reservation/images/I4642:53063;4642:53028"
+			alt="image of Image1"
+			id="Image1_0004">
+									
+								</img>
+								<span id="SixSessionsOfLaser_0005">
+									Jordan Crown
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="NewsLatter">
+				<div id="Rectangle10">
+					
+				</div>
+				<span id="JoinTheSaleWagonAndStartSaving">
+					Join the sale wagon<br/>
+		and start saving..
+				</span>
+				<div id="Group4">
+					<div id="InputFieldBase_0002">
+						<div id="InputWithLabel">
+							<span id="ExpireIn42Days_0008">
+								Email
+							</span>
+							<div id="Input_0002">
+								<div id="Content_0003">
+									<div id="MapPin">
+										<img src="grida://assets-reservation/images/I4642:53154;1088:11;1037:34258"
+			alt="image of Icon"
+			id="Vector_0024">
+											
+										</img>
+									</div>
+									<span id="Text_0036">
+										olivia@untitledui.com
+									</span>
+								</div>
+								<div id="SearchNormal">
+									<div id="HelpCircle_0001">
+										<img src="grida://assets-reservation/images/I4642:53154;1088:280;1054:67;1037:34260"
+			alt="image of Icon"
+			id="Icon_0053">
+											
+										</img>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="Button_0052">
+						<div id="ButtonBase_0016">
+							<span id="Text_0009">
+								Subscribe
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Blogs">
+				<span id="Blogs_0001">
+					Blogs
+				</span>
+				<div id="Frame19">
+					<div id="Frame17">
+						<div id="Blog">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53662;4642:53626"
+			alt="image of UnsplashYhSwy6Uqvk"
+			id="UnsplashYhSwy6Uqvk">
+								
+							</img>
+							<div id="Frame16">
+								<div id="Frame19">
+									<div id="Frame14">
+										<div id="Frame12">
+											<span id="Flat10OffOnDoubleCheeseMargherita">
+												This keto cheesecake is creamy, sweet, deeply 
+											</span>
+											<span id="SaleInStoreOnlinesaleInStoreOnlinesaleInStoreOnline">
+												Id cursus metus aliquam eleifend mi in nulla posuere. Ipsum faucibus vitae alique
+											</span>
+										</div>
+									</div>
+									<div id="Button_0010">
+										<div id="ButtonBase_0019">
+											<span id="Text_0009">
+												Read More
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Blog">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53674;4642:53626"
+			alt="image of UnsplashYui5VfKHuzs"
+			id="UnsplashYhSwy6Uqvk">
+								
+							</img>
+							<div id="Frame16">
+								<div id="Frame19">
+									<div id="Frame14">
+										<div id="Frame12">
+											<span id="Flat10OffOnDoubleCheeseMargherita">
+												Want to spend the day experiencing the best public 
+											</span>
+											<span id="SaleInStoreOnlinesaleInStoreOnlinesaleInStoreOnline">
+												Id cursus metus aliquam eleifend mi in nulla posuere. Ipsum faucibus vitae alique
+											</span>
+										</div>
+									</div>
+									<div id="Button_0010">
+										<div id="ButtonBase_0019">
+											<span id="Text_0009">
+												Read More
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Blog">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53686;4642:53626"
+			alt="image of UnsplashCeWgSMd8RvQ"
+			id="UnsplashYhSwy6Uqvk">
+								
+							</img>
+							<div id="Frame16">
+								<div id="Frame19">
+									<div id="Frame14">
+										<div id="Frame12">
+											<span id="Flat10OffOnDoubleCheeseMargherita">
+												Fashion's taking its inspiration from the Year
+											</span>
+											<span id="SaleInStoreOnlinesaleInStoreOnlinesaleInStoreOnline">
+												Id cursus metus aliquam eleifend mi in nulla posuere. Ipsum faucibus vitae alique
+											</span>
+										</div>
+									</div>
+									<div id="Button_0010">
+										<div id="ButtonBase_0019">
+											<span id="Text_0009">
+												Read More
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Blog">
+							<div id="Rectangle5">
+								
+							</div>
+							<img src="grida://assets-reservation/images/I4642:53698;4642:53626"
+			alt="image of Unsplash3Q3TsJ01Nc"
+			id="UnsplashYhSwy6Uqvk">
+								
+							</img>
+							<div id="Frame16">
+								<div id="Frame19">
+									<div id="Frame14">
+										<div id="Frame12">
+											<span id="Flat10OffOnDoubleCheeseMargherita">
+												The Best Ways to Get Last-Minute Gifts and Earn Cash 
+											</span>
+											<span id="SaleInStoreOnlinesaleInStoreOnlinesaleInStoreOnline">
+												Id cursus metus aliquam eleifend mi in nulla posuere. Ipsum faucibus vitae alique
+											</span>
+										</div>
+									</div>
+									<div id="Button_0010">
+										<div id="ButtonBase_0019">
+											<span id="Text_0009">
+												Read More
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Footer">
+				<div id="Rectangle7_0013">
+					
+				</div>
+				<div id="_1_0001">
+					<span id="QuickLinks">
+						Quick Links
+					</span>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:54985;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								Home
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:54990;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								About Us
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:54998;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								Contact Us
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:55006;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								FAQ’s
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+				</div>
+				<div id="_5_0001">
+					<span id="QuickLinks">
+						General
+					</span>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:55016;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								Categories
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:55021;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								Stores
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:55026;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								sale
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+					<div id="Frame7">
+						<div id="Frame6_0015">
+							<div id="ChevronDown">
+								<img src="grida://assets-reservation/images/I4642:53755;4648:55031;1027:6649"
+			alt="image of Icon"
+			id="Icon_0054">
+									
+								</img>
+							</div>
+							<span id="ExpireIn42Days_0008">
+								NZ Price Comparision Site
+							</span>
+						</div>
+						<div id="Divider_0007">
+							
+						</div>
+					</div>
+				</div>
+				<div id="_4_0001">
+					<div id="Logo">
+						<img src="grida://assets-reservation/images/I4642:53755;4648:54946;4621:53298"
+			alt="image of DealbuddyGreenAndYellowText5001"
+			id="Rectangle6">
+							
+						</img>
+					</div>
+					<div id="PopularDeals">
+						<span id="DealbuddyAimsToHelpCustomersDiscoverNewExperiencesAndProductsAtTheLowestPossiblePricesAndLocalBusinessesThriveEveryDayLetSFindYourPerfectDeal">
+							Dealbuddy aims to help customers discover new experiences and products at the lowest possible prices<br/>
+		and local businesses thrive every day.
+<br/>
+		
+<br/>
+		Let's find your perfect deal !!
+						</span>
+					</div>
+				</div>
+				<div id="Divider_0015">
+					
+				</div>
+				<span id="DealbuddyIsARegisteredTrademarkOfDealBuddyLimitedThirdPartyTrademarksAreThePropertyOfTheirRespectiveThirdPartyOwnersPresenceOfAThirdPartyTrademarkDoesNotMeanThatDealbuddyHasAnyRelationshipWithThatThirdPartyOrThatTheThirdPartyEndorsesDealbuddyOrItsServices">
+					Dealbuddy is a registered trademark of Deal Buddy Limited. Third-party trademarks are the property of their respective third-party owners. Presence of a third-party trademark does not mean that dealbuddy has any relationship with that third-party or that the third-party endorses dealbuddy or its services.
+				</span>
+				<div id="Group8">
+					<span id="_2022DealBuddyLimitedAllRightsReserved">
+						2022 Deal Buddy Limited, All rights reserved.
+					</span>
+					<span id="TermsConditionsPrivacyPolicy">
+						Terms & Conditions  |   Privacy Policy
+					</span>
+					<div id="Frame38_0002">
+						<div id="Facebook">
+							<div id="Bg">
+								
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" id="F">
+								<path fill="white" d="M11.2137 12.2816L11.8356 8.3301L7.94522 8.3301L7.94522 5.76699C7.94522 4.6857 8.48767 3.63107 10.2302 3.63107L12 3.63107L12 0.26699C12 0.26699 10.3945 0 8.86027 0C5.65484 0 3.56166 1.89294 3.56166 5.31845L3.56166 8.3301L0 8.3301L0 12.2816L3.56166 12.2816L3.56166 21.8345C4.27671 21.944 5.00824 22 5.75344 22C6.49864 22 7.23017 21.944 7.94522 21.8345L7.94522 12.2816L11.2137 12.2816Z">
+									
+								</path>
+							</svg>
+						</div>
+						<div id="Facebook">
+							<div id="Bg_0001">
+								
+							</div>
+							<div id="Bg_0002">
+								
+							</div>
+							<div id="Bg_0003">
+								
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" id="Instagram_0001">
+								<path fill="white" d="M17 4.5C17 5.32843 16.3284 6 15.5 6C14.6716 6 14 5.32843 14 4.5C14 3.67157 14.6716 3 15.5 3C16.3284 3 17 3.67157 17 4.5Z">
+									
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<img src="grida://assets-reservation/images/I4642:53755;4648:54965"
+			alt="image of Image2"
+			id="Image2">
+					
+				</img>
+			</div>
+			<div id="NewsLatter_0001">
+				<div id="Rectangle10">
+					
+				</div>
+				<span id="JoinTheSaleWagonAndStartSaving">
+					Join the sale wagon<br/>
+		and start saving..
+				</span>
+				<div id="Group4">
+					<div id="InputFieldBase_0002">
+						<div id="InputWithLabel">
+							<span id="ExpireIn42Days_0008">
+								Email
+							</span>
+							<div id="Input_0002">
+								<div id="Content_0003">
+									<div id="MapPin">
+										<img src="grida://assets-reservation/images/I4668:60257;1088:11;1037:34258"
+			alt="image of Icon"
+			id="Vector_0024">
+											
+										</img>
+									</div>
+									<span id="Text_0036">
+										olivia@untitledui.com
+									</span>
+								</div>
+								<div id="SearchNormal">
+									<div id="HelpCircle_0001">
+										<img src="grida://assets-reservation/images/I4668:60257;1088:280;1054:67;1037:34260"
+			alt="image of Icon"
+			id="Icon_0053">
+											
+										</img>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="Button_0052">
+						<div id="ButtonBase_0016">
+							<span id="Text_0009">
+								Subscribe
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>
